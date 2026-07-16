@@ -1,0 +1,1132 @@
+{
+ "project": {
+  "name": "American Face Reading",
+  "working_titles_in_source": [
+   "American Face Reading",
+   "Modern American Face Reading",
+   "Holistic Face Reading",
+   "Heart-Centered Face Reading"
+  ],
+  "one_line": "A four-skill system for reading a person's emotional history, family conditioning, and archetypal essence from their face, built on the unpublished clinical work of Dr. Michael J. Lincoln and systematized for public teaching by Atma Degeyndt.",
+  "author_authority_claim": "Atma Degeyndt apprenticed directly with Dr. Lincoln, was the only Lincoln student to take on the responsibility of teaching the system to the public, and reverse-engineered the practice into a teachable course. Positioned as the country's leading expert and sole qualified teacher.",
+  "source_material": {
+   "books_planned": 4,
+   "books_provided": 3,
+   "book_1": "Intro/foundations book (intro_book_01_combined.md): preface, history, psychological underpinnings, the four skills, family scripts and developmental arrests overview, applications, ethics, future/AI, concentration addendum, Lincoln bio, Atma bio, nine-section prompts.",
+   "book_2": "Family Scripts book (family_scripts_book_02_combined.md): Atma's intro to the 31 Service Personas organized by five virtue categories (note: this file opens with personas content that conceptually belongs to book 3), script theory foundations (Tomkins, Berne, Steiner), three family systems, script induction, bailing stations metaphor, detailed script examples.",
+   "book_3": "Service Personas book (service_personas_book_03_combined.md): history of face reading across cultures, Lincoln's heart-centered approach, soul types concept, scientific/historical evidence framing, practical applications (personal growth, relationships, professional), future of face reading (AI, VR/AR, neuroscience, genetics, certification).",
+   "book_4": "NOT PROVIDED. Contents unknown. Likely candidate based on structure: a full Developmental Arrests volume (Lincoln's own book on arrests was 'A Funny Thing Happened... (on the way to my life.)'). Confirm with Atma.",
+   "supporting_assets": "Hundreds of generated demonstration images for the books. An app is contemplated in-source: '[if the app is designed, place URL and QR code here]' appears in Book 1 Ch 4."
+  }
+ },
+ "people": {
+  "atma_degeyndt": {
+   "role": "Author, lineage holder, sole public teacher of the system.",
+   "origin_story": "CANONICAL VERSION (fixed by Atma, July 8 2026, in his own words for the What This Is page): a good friend and kundalini master looked at a photograph of Atma and his ex-girlfriend for about 30 seconds, pointed to her face, and told him why it would never work out, something it took Atma almost a year and a bad breakup to figure out. Then he pointed to Atma's eyes in the photo and told him a surprising detail about why she would never have been able to keep up with him. Atma's reaction was ambition, not skepticism: whatever this thing was, he was going to master it. The friend had learned face reading from the man who discovered it in the late 1960s (Dr. Lincoln) and took Atma to him. That began a 15-YEAR APPRENTICESHIP. Do not write Atma as a skeptic-convert in brand copy; his true register at the origin moment is hunger to master. Book-manuscript variants of this story exist but this is the web canon.",
+   "unique_claims": [
+    "Only Lincoln student to teach publicly",
+    "Reverse-engineered the practice into a systematic, learnable course",
+    "Explicit mission to preserve and extend Lincoln's legacy and to invite scientific testing of the model"
+   ],
+   "bio_file_status": "STALE AND NON-COMPLIANT. Atma_bio_v2 in Book 1 says $1.8M in 18 months (locked factual anchor is sixteen months), leads with retired Growth Bastards CMO identity, and uses currently banned brand vocabulary (tapestry, testament, landscape, beacon, ever-evolving, intricate, multifaceted, delve, foster). Do not reuse for the website; rewrite from current atma.marketing positioning."
+  },
+  "dr_michael_j_lincoln": {
+   "legal_and_other_names": "Michael Ebner; spiritual name Narayan Singh Khalsa. Source file misspells 'Micheal' twice.",
+   "credentials": "PhD Clinical Psychology, University of Oregon. Clinical director at one of the earliest behavior-modification treatment programs for emotionally disturbed children. Professor of psychology, University of Portland. Developed childcare practitioner accreditation programs. Sikh Dharma minister vows in 1998; 'Psycho-Sacred Teacher and Healer.'",
+   "died": "October 15, 2016, Redmond, Washington.",
+   "publication_status": "Never academically published; attributed in-source to the novelty of the work and lack of institutional research support. Prolific writer; left a large body of work. Known related books referenced in-source: 'It's All In the Family' (Family Scripts) and 'A Funny Thing Happened... (on the way to my life.)' (Developmental Arrests).",
+   "stated_wishes": "Was vocal that the system should NOT be used by lawyers; best used by those providing healing and support.",
+   "estate_or_legacy_contact_in_source": "Talking Hearts, P.O. Box 8042, Spring Creek NV 89815; 916-420-0904; info@talkinghearts.net; talkinghearts.net. RIGHTS QUESTION: confirm what permission/licensing exists for teaching and publishing Lincoln's IP under the American Face Reading brand.",
+   "character_note": "Described as a 'Gonzo psychologist': open-hearted, open-minded, willing to entertain everything from dry behaviorism to wild-eyed esotericism. The books deliberately preserve this range."
+  }
+ },
+ "core_framework": {
+  "definition": "Face reading here is NOT fortune-telling from fixed features. It is the interpretation of residual emotional traces, expression habits, and archetypal energy patterns visible on the face, treated as a record of the person's developmental history and essence. The face is read as a living story, not a static map.",
+  "epistemic_status": "Explicitly framed throughout as a well-developed HYPOTHESIS. The nine-sections model is the one component acknowledged in-source as unverified by academic standards. Lincoln's assessments were reported to match standard clinical assessments in accuracy, but no controlled published validation exists. The books call for researchers to test the model. This honesty is a core brand asset.",
+  "lineage": "Darwin (1872 universality of expression) -> Tomkins (nine innate affects; script theory) -> Ekman & Friesen (six basic emotions; FACS; microexpressions; Duchenne smile; leakage) -> Izard (developmental origins of expression) -> Condon & Birdwhistell (kinesics; interactional synchrony up to 16x/second; the twins favoritism study with ~4,800 micro-rejections in five minutes) -> Barker & Wright (Midwest Psychological Field Station; behavior settings; noninterfering continuous observation / idiographic functional analysis) -> Ambady (thin-slicing) -> Gibson (ecological perception) -> Lincoln (nine sections; trace emotions; family scripts; developmental arrests; service personas; heart-centered method) -> Atma (systematization, four-skill curriculum, public teaching).",
+  "lincoln_discovery_story": "As clinical director facing an out-of-control residential unit, Lincoln began second-by-second 'process recording' of everything happening, then subjected half-second chunks to Skinnerian contingency analysis. The profiles that emerged exceeded standard assessments. He then noticed he could predict a child's functioning from the face alone before intake, and spent 10+ years mapping facial attributes to psyche.",
+  "four_skills": [
+   {
+    "number": 1,
+    "name": "Non-verbal Assessment / Continuous Monitoring (Ideographic Functional Analysis)",
+    "book_1_chapter": 3,
+    "summary": "Focused, non-judgmental, uncensored stream-of-consciousness observation and instantaneous documentation of a face, section by section, before any interpretation. Quantity over quality; descriptive, metaphor-rich notes; timed sessions; analysis only afterward.",
+    "timing_note": "INCONSISTENCY: one passage prescribes 3-5 minutes per facial section; the prompts instruct 60 seconds per prompt. Reconcile for curriculum."
+   },
+   {
+    "number": 2,
+    "name": "Emotion Pattern Recognition (branded in-source as 'EmoTrace')",
+    "book_1_chapter": 4,
+    "summary": "Rapid recognition of residual emotional traces via thin-slicing. Three training stages: (1) Learning/Recognition using segmented high-quality photos per facial region; (2) Application/Practice with mixed and muted emotion exercises; (3) Advanced Analysis reading layered emotional history, resilience, and interactions between traces.",
+    "asset_note": "'EmoTrace' is a coined, ownable product name buried in the manuscript. Strong candidate for app/course branding."
+   },
+   {
+    "number": 3,
+    "name": "Familiarity with Behavioral Issues (Environmental Influences)",
+    "book_1_chapter": 5,
+    "summary": "Inferring the early-life environment from trace emotions, including chronology. Core empowerment claim: knowing the onset context removes guilt and self-recrimination, opening healing."
+   },
+   {
+    "number": 4,
+    "name": "Recognition of Service Personas (Archetypes / Soul Types)",
+    "book_1_chapter": 6,
+    "summary": "Matching a person's energetic pattern and embodiment to one or more of 31 archetypes. Book 1 Ch 6 explicitly REJECTS identifying personas from physiological features as classist/racist/sexist stereotyping; personas are energy patterns, not face shapes."
+   }
+  ],
+  "nine_sections_of_the_face": {
+   "status": "The heart of the Lincoln hypothesis and the one explicitly unverified component.",
+   "copyedit_flag": "Book 1's numbered list contains only 7 items covering 9 channels (two items bundle right/left pairs). The standalone prompts file gives the canonical nine.",
+   "sections": [
+    {
+     "section": "Right Mouth",
+     "meaning": "Dealing with people, family of origin, culture",
+     "prompt": "How I get what I want...",
+     "focus": "Ages 1-7 need-getting strategies, response to family system, conflict style, attention seeking/avoiding"
+    },
+    {
+     "section": "Left Mouth",
+     "meaning": "Feelings toward others",
+     "prompt": "I expect people to...",
+     "focus": "How others make them feel, coping strategies, expectations of others, perceived perception"
+    },
+    {
+     "section": "Full Mouth",
+     "meaning": "Social purpose, persona, reputation",
+     "prompt": "How people feel about me...",
+     "focus": "Social goals, projected image, expected social treatment"
+    },
+    {
+     "section": "Right Eye",
+     "meaning": "Experience of the world",
+     "prompt": "I see the world as...",
+     "focus": "World perception and its emotional cost"
+    },
+    {
+     "section": "Left Eye",
+     "meaning": "Self-perception in the world",
+     "prompt": "I see myself as...",
+     "focus": "Self-image, self-comparison, reconciling inner identity with outer perception"
+    },
+    {
+     "section": "Both Eyes",
+     "meaning": "Life experience, inner goals",
+     "prompt": "The thing I am here to do is...",
+     "focus": "Quality of life experience, soul goals, aspirations"
+    },
+    {
+     "section": "Right Side of Face",
+     "meaning": "Response to situations (outward/social side)",
+     "prompt": "This is how I deal with the world...",
+     "focus": "Reaction strategies to positive and adverse situations"
+    },
+    {
+     "section": "Left Side of Face",
+     "meaning": "Internal motivations and interpretations (inner/personal side)",
+     "prompt": "This is who I really am...",
+     "focus": "Core motivations, meaning-making, fears, gifts"
+    },
+    {
+     "section": "Whole Face",
+     "meaning": "Purpose in life",
+     "prompt": "The reason I am here, my purpose in life is...",
+     "focus": "Overarching purpose, potentials, definition of success, core values"
+    }
+   ]
+  },
+  "trace_emotions": {
+   "thesis": "The consistency and persistence with which a child experiences each basic emotion (or emblem of repression) leaves a visible trace on each quadrant of the face; the configuration of residual traces tells the story of the environment that created them and the individual's response.",
+   "persistent_basic_emotions": [
+    "Anger",
+    "Contempt",
+    "Disgust",
+    "Elation/Joy/Happiness",
+    "Envy",
+    "Fear",
+    "Guilt/Shame",
+    "Pride",
+    "Sadness",
+    "Satisfaction/Contentment"
+   ],
+   "excluded": "Transient emotions like surprise are excluded because they lack persistence.",
+   "emblems_of_repression": [
+    "Repressed anger",
+    "Repressed sadness",
+    "Absence of joy/elation/contentment"
+   ],
+   "taxonomy_note": "Three emotion taxonomies coexist in-source: Tomkins' nine affects (incl. dismell), Ekman's six basics, and the system's own ten persistent emotions plus three repression emblems. The books use them for different purposes (history vs. practice), but the website must not conflate them.",
+   "physical_signatures_examples": {
+    "anger": "Deep furrows between brows, narrowed eyes, set jaw, tense mouth, flared nostrils",
+    "joy": "Crow's feet, upturned mouth corners, Duchenne engagement of orbicularis oculi",
+    "fear_sadness": "Brows pulled together/up, forehead furrows, wide or overly alert eyes, downturned mouth, drooping face, hollow cheeks",
+    "guilt_shame": "Averted/downcast gaze, flushing, nervous face-touching, shrinking posture",
+    "pride": "Lifted chin, small knowing smile, sparkle, aligned posture",
+    "repression": "Stiff mask-like quality concealing turmoil"
+   },
+   "chronology_method": {
+    "principle": "Complexity of the emotional array indicates developmental timing: simple single traces (fear+sadness only) suggest infancy impact; complex blends (guilt, shame, embarrassment mixed in) suggest preschool-era impact. Positive traces alongside negative suggest resilience or improved environment.",
+    "age_bands": [
+     {
+      "band": "Infancy 0-24 months",
+      "dominant": [
+       "happiness",
+       "sadness",
+       "fear",
+       "anger"
+      ],
+      "key_experiences": [
+       "attachment formation",
+       "separation anxiety",
+       "stranger anxiety",
+       "unmet needs",
+       "overstimulation"
+      ]
+     },
+     {
+      "band": "Toddlerhood 18-36 months",
+      "dominant": [
+       "happiness",
+       "pride",
+       "frustration",
+       "fear"
+      ],
+      "key_experiences": [
+       "autonomy",
+       "social play",
+       "discipline",
+       "imaginary fears"
+      ]
+     },
+     {
+      "band": "Preschool 3-5 years",
+      "dominant": [
+       "happiness",
+       "pride",
+       "guilt",
+       "shame",
+       "embarrassment",
+       "anger"
+      ],
+      "key_experiences": [
+       "peer relationships",
+       "achievement",
+       "conflict",
+       "environmental change"
+      ]
+     }
+    ],
+    "environmental_signatures": [
+     {
+      "pattern": "Codependency",
+      "traces": [
+       "repression emblems",
+       "sadness"
+      ]
+     },
+     {
+      "pattern": "Overt hostility",
+      "traces": [
+       "anger",
+       "fear",
+       "disgust/contempt"
+      ]
+     },
+     {
+      "pattern": "Narcissistic parenting",
+      "traces": [
+       "sadness",
+       "pride",
+       "arrogance"
+      ]
+     },
+     {
+      "pattern": "Overprotective parenting",
+      "traces": [
+       "sadness",
+       "guilt/shame",
+       "absence of joy/elation"
+      ]
+     }
+    ]
+   }
+  },
+  "three_family_systems": [
+   {
+    "name": "Survival Systems (aka Crutch-aholics)",
+    "dynamic": "Frustration, rage, indirect hostility under a veneer of pseudo-nurturing or conventional morality. Child makes a 'bargain with the devil': sacrifices authenticity for a role/crutch (caretaker, scapegoat, clown) to fit the dysfunctional dance.",
+    "adult_legacy": "Hypervigilance, emotion-regulation difficulty, relationships echoing early instability.",
+    "example_scripts_detailed": [
+     "A.R.M.eD (Angry, Rigid, Moralistic, Dogmatic; formerly Church Mouse)",
+     "Black Sheep",
+     "Model Child"
+    ]
+   },
+   {
+    "name": "Self-Centered Systems (aka WHIM: What's In it for Me)",
+    "dynamic": "Adults' needs dominate; children's needs are an afterthought. Child either leaves (emotionally/physically) or becomes their own parent.",
+    "adult_legacy": "Belief in own unlovability, emotional hunger, compulsive self-reliance, intimacy avoidance, external locus of self-esteem.",
+    "example_scripts_detailed": [
+     "Perennial Child",
+     "Queen of Hearts",
+     "Desperado"
+    ]
+   },
+   {
+    "name": "Codependent Systems (aka KAOH: Keep 'Em Around the Old Homestead)",
+    "naming_flag": "Also rendered 'Keep 'Em Around the House' elsewhere in-source. Standardize.",
+    "dynamic": "Love devolved into enmeshment, guilt, mutual dependency; parents' unmet needs projected onto children; individuation systematically thwarted to preserve homeostasis.",
+    "adult_legacy": "Abandonment fear, chronic guilt/obligation, infantilization, self-worth contingent on being needed.",
+    "example_scripts_detailed": [
+     "Keystone Kid",
+     "Odd Duck (formerly Yuk Artist)",
+     "Goodie-Two-Shoes"
+    ]
+   }
+  ],
+  "bailing_stations_metaphor": "Children in dysfunctional systems are handed a bucket and assigned a station to bail the family's emotional leakage (peacekeeper, caretaker, scapegoat, problem solver). Scripts are 'delusional conclusions' formed at the developmental stage of assignment, functioning like post-hypnotic suggestions that become self-fulfilling prophecies.",
+  "thirty_one_family_scripts": {
+   "source": "Dr. Lincoln's 'It's All In the Family'; theoretical roots in Silvan Tomkins' script theory, Eric Berne's transactional analysis, and Claude Steiner's 'Scripts People Live.' Atma has written a separate full encyclopedic text on Family Scripts (Book 2).",
+   "list": [
+    "A.R.M.eD (formerly Church Mouse)",
+    "Model Child",
+    "Black Sheep",
+    "Peck's Bad Boy",
+    "Fog Bound",
+    "Lone Marauder",
+    "Smiling Jack-o-lantern",
+    "The Egghead",
+    "The Injustice Hound",
+    "Claim to Fame",
+    "Hobby Horse",
+    "Family Emblem",
+    "Perennial Child",
+    "Urban Hermits",
+    "Apple Tree",
+    "Queen of Hearts",
+    "The Persnickety Princess (formerly JAP)",
+    "Red Riding Hood",
+    "Desperado",
+    "Rebellious Child",
+    "Center Stage",
+    "The Pariah (formerly Ugly Duckling)",
+    "Spoiled Brat",
+    "Pleasure Monger",
+    "Keystone Kid",
+    "Odd Duck (formerly Yuk Artist)",
+    "WOW",
+    "Goodie-Two-Shoes",
+    "One and Only Heir",
+    "Eeyore (formerly Dopey)",
+    "Family Dog"
+   ],
+   "renaming_note": "Several scripts were renamed to remove dated/offensive labels (Church Mouse, JAP, Ugly Duckling, Yuk Artist, Dopey). This modernization is itself a brand story: the system actively sheds its era's baggage.",
+   "count_flag": "Book 1 Ch 3 references 'Lincoln's 55 variations of scripts.' 31 scripts + ~10 arrests + AYM does not equal 55 by any obvious math in the provided files. Resolve the 55 figure or cut it."
+  },
+  "thirty_one_service_personas": {
+   "concept": "Soul types: inherent avenues of manifestation and learning, developed across lifetimes (explicit reincarnation framing in Book 3). Not fixed categories; individuals embody multiple archetypes on a spectrum. Recognized by energetic pattern and embodiment, NOT facial morphology (per Book 1 Ch 6).",
+   "philosophical_roots": [
+    "Plato's Forms",
+    "Jung's collective unconscious and archetypes",
+    "Northrop Frye's four mythoi",
+    "Joseph Campbell's monomyth",
+    "I Ching correspondences (Trickster/Hexagram 58 Tui; Innocent/Hexagram 25 Wu Wang)",
+    "Evolutionary psychology framing (Bowlby attachment for caregiver archetypes, Buss mating strategies for Lover, hierarchy research for King/Warrior)"
+   ],
+   "five_categories": {
+    "WISDOM_11": [
+     "Sorcerer (consciousness-shifter, magician/alchemist presence)",
+     "Priestess (intuitive loving guide; balances yin-yang)",
+     "Wise Old Man (head-centered wisdom; diplomat/ombudsman)",
+     "Wise Old Woman (heart-centered wisdom; caretaker of spirits)",
+     "Fool/Clown ('smiling depressives'; humor masking depth and sadness)",
+     "Seer (cosmic trendsetter; connects the dots; oracle)",
+     "Teacher (leads by example; Chance-the-Gardener quality)",
+     "Counselor (spiritual pragmatist; individual-level empath-guide)",
+     "Hetaera (astute advisor behind the throne)",
+     "Cosmic Elder (stands alone; synthesizes sacred and secular via dialectic)",
+     "Epicurean (master curator; heightened senses; relishes creation)"
+    ],
+    "COURAGE_8": [
+     "Warrior (fights for others; rules, order, determination)",
+     "King/Empress (charismatic born leader; JFK, Oprah examples)",
+     "Priest (fearless spokesperson for sacred vision; dogma risk)",
+     "Trickster (paradigm disruptor; siren of innovation)",
+     "Eros (passionate sensual risk-taker; burnout risk when immature)",
+     "Justice (advocate for balance/equity; Nader, Krishnamurti, Alice Miller, Gabor Mate examples)",
+     "Discoverer (fearless pioneer-innovator; trendsetter, early adopter)",
+     "Hero/Heroine (vision-quest life; Earhart, Parks, Tubman examples)"
+    ],
+    "KINDNESS_6": [
+     "Joy Child (optimism, win-win, harmony creation)",
+     "Fountain of Love (agape; unconditional open-hearted love)",
+     "Lover (relational love; models healthy relationship)",
+     "Maternal (generativity; nurture that teaches)",
+     "Healer (holistic healer of the whole person; calming presence)",
+     "Shaman (healer of souls; mediates sacred and secular; altered states)"
+    ],
+    "SINCERITY_4": [
+     "Supporter (selfless enabler at scale; Hermione Granger example; NOTE typo 'Miguel Gorbachev' for Mikhail)",
+     "Creator (inventor; engine of novelty)",
+     "Innocent (vulnerability plus tornado force when morally aroused)",
+     "Empath (feels what others feel; must learn to be in the world, not of it)"
+    ],
+    "HUMILITY_2": [
+     "Observer ('cosmic camcorder'; learning-absorbed; scholars/artists/scientists)",
+     "Monk (contemplative; tuned to the ineffable; reluctant but powerful leader)"
+    ]
+   },
+   "practice": "Identified via the same continuous-monitoring method: study theory first, observe without judgment, collect behavioral data, pattern-match to persona descriptions, form and test hypotheses, seek dialogue/feedback, refine over repeated practice."
+  },
+  "developmental_arrests": {
+   "concept": "A developmental 'stepladder' with rungs at critical turning points from conception through early childhood where the person's way of dealing with life gets settled. Inadequate caregiving at a rung 'arrests' development there. Parallels Erikson (trust-vs-mistrust maps to Bootstrap; autonomy-vs-shame maps to ORD) but dives deeper into infancy. Source: Lincoln's 'A Funny Thing Happened... (on the way to my life.)' In-source spells 'Eric Erickson'; correct spelling is Erik Erikson.",
+   "signature_feature": "Every arrest includes a CONVERSION: the healed form. WIM converts to the deeply perceptive empath; Bootstrap to the talented, creative, lovable survivor; KEG to the statesperson/protector; ORD to the wise grandparent whose service becomes gift not penance; LAM to the profoundly attuned spiritual guide; LCC to the unconditional nurturer; RFE to the empowerer of others. This redemption arc is the single most marketable feature of the arrests model.",
+   "arrests": [
+    {
+     "code": "Terminal",
+     "window": "in utero through crib",
+     "content": "Miscarriage, stillbirth, SIDS framed as 'soul choice' in Eastern-psychology terms. EXTREME PUBLIC-FACING RISK: do not surface on the website."
+    },
+    {
+     "code": "Ice Cube",
+     "window": "conception-1 month",
+     "cause": "Failure to bond with mother",
+     "claim": "'Generates your basic sociopath' (antisocial personality disorder); described as rare. RISK: clinical-diagnosis language a lay brand cannot defend.",
+     "needs": "Warmth, being loved, deserving to be"
+    },
+    {
+     "code": "WIM (Where Is Mommy?)",
+     "window": "1-3 months",
+     "cause": "Uninterpretable mix of love and hate from an overwhelmed 'perfect mommy' who is emotionally absent",
+     "makeup": "No sense of safety/connection; alienation; rigid controlling compensation; worst case schizoid personality disorder",
+     "face": "Chronic anxiety: flat cheeks, tense muscles, vigilant stare, haunted hunted look",
+     "conversion": "Highly perceptive, deeply empathic"
+    },
+    {
+     "code": "Bootstrap",
+     "window": "first 6 months",
+     "cause": "Emotionally unavailable/rejecting caregiver; child concludes 'I'm so bad even my mom doesn't love me' and rears itself",
+     "makeup": "Grief, guilt, fear; deep vulnerability fear; competence and creativity as compensation; cannot receive; hoarding",
+     "body": "Back tension, retracted shoulder blades, shallow interrupted breathing, tight knees, restlessness",
+     "conversion": "Talented, creative, lovable"
+    },
+    {
+     "code": "KEG (Keep 'Em Guessing)",
+     "window": "1-12 months",
+     "cause": "Needs met but environment distrusting/hostile/punitive; parents fit PANG profile ('People Are No Good')",
+     "makeup": "Rage, fear, disgust/contempt; 'I'm not ok and you're worse'; controlling, short-tempered, risk-avoidant",
+     "face": "Bulldogish or gaunt with taut skin, smaller upper lip, lopsided mouth, flattened angry mouth area, narrowed eye(s), lowered brows, forward-tilted head looking up",
+     "conversion": "Statesperson; leader with integrity; protector"
+    },
+    {
+     "code": "ORD",
+     "window": "6-18 months",
+     "cause": "Over- or under-protective caregiving blocks self-trust; wanting/willing becomes zero-sum",
+     "makeup": "Chronic mourning; compulsive service; over-responsible depressive ('You first; Me last'); degree/certification collecting; genuinely altruistic underneath",
+     "body": "Punched-in-the-stomach look, forward shoulders, stiff neck, leg tension primed to escape",
+     "conversion": "Wise, gentle grandparent; service as gift"
+    },
+    {
+     "code": "LAM (Look At Me)",
+     "window": "9-19 months",
+     "cause": "Failure of substantive validation during self-discovery phase (five caretaker failure modes: dysfunction, neediness, envy, pedestal-worship, over-capitulation)",
+     "makeup": "Terror of disapproval; emptiness; addiction-prone; narcissistic rage; intimacy avoidance; empathy difficulty",
+     "face": "Pout-like quality often mixed with contempt; spine/back tension; self-protective upper body",
+     "conversion": "Profound attunement; excellent spiritual guides"
+    },
+    {
+     "code": "LCC (Love Courting Codependents, formerly SLiM)",
+     "window": "2-14 months, key 18 months (WINDOW/KEY MISMATCH FLAG: key point falls outside stated window)",
+     "cause": "Scarcity-of-nurturance family economies; affection economized, politicized, or rewarded for not being needed; mother withdraws affection when child individuates",
+     "makeup": "Unworthiness; abandonment AND engulfment anxiety; responsibility-avoidant; self-defeating; entertaining and responsive to win attention. Contains a draft artifact: '(A: anything missing?)'",
+     "body": "Bent, over-burdened; hunched narrow shoulders; head down; stiff lower body; locked pelvis",
+     "conversion": "Highly loving nurturers who give without requiring return"
+    },
+    {
+     "code": "RFE (Responsible For Everything, aka PANG)",
+     "window": "20-36 months, key 24 months",
+     "naming_flag": "PANG is used both as the KEG parents' profile AND as RFE's alias. Two different meanings for one acronym. Resolve.",
+     "cause": "Father-driven perfection standards; responsibility beyond capability; conditional self-esteem ('only as good as my outcomes')",
+     "makeup": "Guilt, extreme abandonment anxiety, self-criticism, suppressed grief and resentment, perfectionist doer",
+     "face_body": "Flat angular structure, firm jaw, sometimes protruding chin, fixed set mouth, down-sloping tapering upper lip ('sad determination'), smooth under-eye area from tension, brows up over the bone ridge (placating/fearful); nape tension, tight shoulders, slight slump, deflated chest, studied relaxed posture",
+     "conversion": "Empowerer and facilitator of others' best work"
+    }
+   ],
+   "aym_overlay": {
+    "code": "AYM (Angry Young Man/Maiden)",
+    "nature": "Not an arrest but an overlay dimension that can run concurrently with any arrest, adding a layer of rage absorbed from angry, resentful, blaming, controlling-but-responsibility-avoidant parents. Essence of dysfunctionality: negativity permeates all relations; nothing given freely.",
+    "face": "Tightly held face, drawn furrowed forehead or whole-face tautness, eye-muscle tautness or exaggerated wrinkles, compressed mouth, tight jaw"
+   }
+  },
+  "concentration_addendum": {
+   "purpose": "Concentration is the meta-skill underlying continuous monitoring. Blends cognitive psychology (James; selective/sustained/executive attention; DMN down-regulation in meditators) with yogic method (trataka, yoga nidra, pranayama) and modern strategies (MBSR, MBCT, cognitive training, exercise, nutrition, Pomodoro, neurofeedback).",
+   "practices": [
+    {
+     "name": "Focused Breath Awareness (beginner)",
+     "method": "Breath counting 1-10 cycles with stopwatch; journal focus duration; start 2-5 minutes"
+    },
+    {
+     "name": "Thought-Free Concentration Timing (advanced)",
+     "method": "Time the gap from focus onset to first intruding thought; progressive targets of 15, 22, then 30+ seconds"
+    }
+   ],
+   "asset_note": "The two timed practices are naturally gamifiable: leaderboard/streak mechanics for an app."
+  }
+ },
+ "scientific_and_ethical_positioning": {
+  "what_is_established_science": [
+   "Universality of basic emotional expression (Ekman cross-cultural studies incl. Papua New Guinea)",
+   "FACS as valid taxonomy of facial action units; Duchenne vs social smiles",
+   "Microexpressions and leakage",
+   "Thin-slicing accuracy (Ambady: teacher effectiveness, relationship outcomes) and its bias susceptibility (Albrechtsen & Meissner; in-source misspelled 'Alberchsten')",
+   "Interactional synchrony (Condon)",
+   "Behavior settings and naturalistic observation (Barker & Wright)",
+   "Emotional development research (Gunnar & Quevedo 2007 oxytocin; Nelson's Romanian orphan studies; Potegal & Davidson 2011 tantrums; Tronick still-face; Tracy & Robins 2007 pride universality; Gottman on contempt/hostility; Ekman 'Emotions Revealed')",
+   "Modest ANN facial-feature/Big Five correlations; face-shape/personality associations confounded by stereotype and genetics"
+  ],
+  "what_is_hypothesis": [
+   "The nine sections and their specific psychological correspondences (acknowledged in-source as THE unverified element)",
+   "Persistent-trace-to-childhood-chronology mapping at the specificity claimed",
+   "Family scripts and arrests as face-readable categories",
+   "Service personas as soul types visible in energy/embodiment",
+   "Reincarnation framing of soul types (Book 3)"
+  ],
+  "in_source_validation_agenda": [
+   "Critical examination with open-mindedness",
+   "Design empirical studies to test claims",
+   "Integrate with established frameworks",
+   "Present as evolving-theory case study in education",
+   "Caution and transparency in clinical application",
+   "Cross-disciplinary collaboration",
+   "Peer-reviewed publication",
+   "Public engagement"
+  ],
+  "explicit_repudiations": [
+   "Mien Shiang's cultural symbolism and pre-scientific cosmology",
+   "Della Porta / Lavater physiognomy and its colonial-racist legacy",
+   "Phrenology (Gall, Spurzheim) as 'complete sham'",
+   "Physiognomic determinism generally",
+   "Feature-based persona identification (Book 1 Ch 6)"
+  ],
+  "ethics_chapter_content": [
+   "Informed consent and voluntary participation; right to withdraw",
+   "Confidentiality and privacy",
+   "Interpretation held lightly; context and culture dependence",
+   "Anger bias against Black faces and age-based misperception research cited as bias warnings",
+   "Not a parlor trick; empathy over dazzle",
+   "Lincoln's anti-lawyer-use wish",
+   "AI-era concerns: facial data commodification, biased algorithms (higher error rates for people of color and women), surveillance, physiognomic determinism"
+  ],
+  "why_this_matters_for_brand": "The books' relentless self-critique is the differentiator. Every competing face-reading property claims certainty; this one claims a testable hypothesis with a documented scientific lineage and a named list of its own weaknesses. 'The only face reading honest enough to call itself a hypothesis' is a defensible position no Mien Shiang or Vedic competitor can copy."
+ },
+ "internal_inconsistencies_and_qa_flags": [
+  {
+   "id": 1,
+   "severity": "critical",
+   "flag": "DOCTRINAL CONTRADICTION on persona identification: Book 1 Ch 6 forbids physiological identification of personas (energetic patterns only); Book 3 Ch 2 and Ch 4 repeatedly tie personas to physical features (Warrior = prominent jawline and intense eyes; Supporter = soft rounded face and kind eyes; Fountain of Love = soft empathetic eyes). Also Ch 7's family-scripts text reads scripts from 'facial structure' (strong jawline = Crutch-aholic stoicism). The website must pick one doctrine. Recommendation: Book 1 Ch 6's energetic-pattern doctrine is both more defensible and more distinctive; align Book 3 copy to it."
+  },
+  {
+   "id": 2,
+   "severity": "critical",
+   "flag": "Trace-emotion skill DOES read structure-from-emotion-history (furrows, set jaw), while persona skill forbids structure-reading. The distinction (acquired traces vs innate morphology) is coherent but never stated crisply anywhere. The website needs one clean sentence drawing this line or critics will conflate the system with physiognomy."
+  },
+  {
+   "id": 3,
+   "severity": "high",
+   "flag": "Stale Atma bio: 18 months vs locked sixteen-month anchor; Growth Bastards CMO framing retired; saturated with banned vocabulary. Rewrite before any web use."
+  },
+  {
+   "id": 4,
+   "severity": "high",
+   "flag": "'55 variations of scripts' (Book 1 Ch 3) unexplained; provided taxonomies give 31 scripts, ~9 arrest codes plus AYM, 31 personas. Source or delete the 55."
+  },
+  {
+   "id": 5,
+   "severity": "high",
+   "flag": "PANG double-duty: parents' profile for KEG AND alias for RFE."
+  },
+  {
+   "id": 6,
+   "severity": "medium",
+   "flag": "KAOH expansion inconsistent: 'Old Homestead' vs 'House.'"
+  },
+  {
+   "id": 7,
+   "severity": "medium",
+   "flag": "LCC window 2-14 months with key at 18 months: key falls outside window. Draft note '(A: anything missing?)' still embedded."
+  },
+  {
+   "id": 8,
+   "severity": "medium",
+   "flag": "Nine sections rendered as a 7-item numbered list in Book 1; canonical nine only in the prompts file."
+  },
+  {
+   "id": 9,
+   "severity": "medium",
+   "flag": "Observation timing conflict: 3-5 minutes per section vs 60 seconds per prompt."
+  },
+  {
+   "id": 10,
+   "severity": "medium",
+   "flag": "'Ideographic' vs 'idiographic' spelling inconsistency (Barker & Wright's term is idiographic)."
+  },
+  {
+   "id": 11,
+   "severity": "medium",
+   "flag": "Book 3 contains author-flagged MISSING sections: academic context for personas, origins question (hereditary vs environmental vs third option), and whether any personality assessment correlates with service persona."
+  },
+  {
+   "id": 12,
+   "severity": "low",
+   "flag": "Name/typo cleanups needed: 'Micheal' Lincoln; 'Eric Erickson' for Erik Erikson; 'Alberchsten' for Albrechtsen; 'Miguel Gorbachev' for Mikhail; 'Being' for the film 'Being There'; 'Joan of the Arts' for Joan of Arc; 'Sir Edmond, Hillary' for Sir Edmund Hillary; 'The Discover' for The Discoverer; sample-emotion image table lists Sadness twice and Pride twice (Figures 1-13)."
+  },
+  {
+   "id": 13,
+   "severity": "low",
+   "flag": "Book 2 file opens with Service Personas content that conceptually belongs to Book 3; file organization does not match book boundaries."
+  },
+  {
+   "id": 14,
+   "severity": "structural",
+   "flag": "Book 4 not provided and never named; the full 31 Family Scripts have brief descriptions for only 9 of 31 in provided material."
+  }
+ ],
+ "risk_register_for_public_website": [
+  {
+   "risk": "Soul-choice framing of miscarriage, stillbirth, SIDS",
+   "why": "Grieving parents encountering 'the soul chose to leave' out of book context is a reputational detonation and invites justified press criticism. Keep out of all web copy; if retained in books, add careful framing.",
+   "severity": "extreme"
+  },
+  {
+   "risk": "Clinical-diagnosis claims (sociopath/ASPD from Ice Cube; schizoid PD from WIM)",
+   "why": "A non-clinician brand asserting facial routes to personality-disorder diagnosis invites professional attack and possibly regulatory attention depending on how services are marketed.",
+   "severity": "high"
+  },
+  {
+   "risk": "Mother-blame density",
+   "why": "Arrest etiologies overwhelmingly assign causation to mothers ('perfect mommy,' withdrawn affection, envy of child). Reflects the era of Lincoln's clinical work; modern audiences and therapists will flag it. Reframe as caregiver-system language.",
+   "severity": "high"
+  },
+  {
+   "risk": "Physiognomy-pseudoscience attack surface",
+   "why": "Any 'read character from faces' claim gets pattern-matched to phrenology and the discredited AI criminality/sexuality-prediction papers. The books pre-empt this well; the website must lead with the repudiation, not bury it.",
+   "severity": "high"
+  },
+  {
+   "risk": "IP and estate rights",
+   "why": "System, script names, and arrest taxonomy are Lincoln's; Talking Hearts appears to steward his legacy. Confirm rights to teach, brand, and commercialize before the site claims ownership language.",
+   "severity": "high"
+  },
+  {
+   "risk": "Accuracy overclaim",
+   "why": "In-source phrases like 'accuracy bordering on the telepathic' and app fantasies (real-time honesty gauges in job interviews) contradict the ethics chapters and consent doctrine. Website copy must not inherit them.",
+   "severity": "medium"
+  },
+  {
+   "risk": "Reincarnation framing of soul types",
+   "why": "'Developed over many lifetimes' narrows the audience to the spiritually inclined and hands skeptics a dismissal. Decide whether the web brand leads secular-psychological with spiritual depth available, or leads spiritual.",
+   "severity": "medium"
+  },
+  {
+   "risk": "Law-enforcement anecdotes vs Lincoln's anti-forensic wish",
+   "why": "Atma's bio touts law-enforcement assists; Lincoln explicitly opposed legal use. Reconcile the story or expect the contradiction to be noticed.",
+   "severity": "medium"
+  }
+ ],
+ "marketing_analysis": {
+  "core_assets": [
+   "Lineage moat: sole public-teaching student of a dead, unpublished master. Scarcity is real and unfakeable.",
+   "Origin story: the movie-star breakup and the cold photo read. Cinematic, personal, instantly retellable. Appears twice in-source (Preface and Book 2 intro) in slightly different versions; canonicalize one.",
+   "EmoTrace: an ownable sub-brand for the trainable skill, ready for app and course naming.",
+   "Conversion arcs: every arrest and script includes its healed form. This flips the taxonomy from deficit-labeling to redemption narrative, which is both ethically safer and commercially stronger.",
+   "Four-skill curriculum: the book structure IS a course architecture (Skill 1-4 plus concentration foundation). Zero redesign needed for an email course or cohort program.",
+   "Hundreds of demonstration images: training-deck and app content already produced.",
+   "Nine-section prompts: a complete guided-practice script, ready to become an interactive web tool or lead magnet.",
+   "Honest-hypothesis positioning: unique in the category; invites researchers instead of hiding from them.",
+   "Timed concentration practices: gamifiable app mechanics.",
+   "American branding: the face-reading search category is dominated by Chinese (Mien Shiang) and Vedic content; 'American Face Reading' is an open positioning lane with built-in differentiation (scientific lineage, psychological vocabulary, ethics-forward)."
+  ],
+  "audiences_ranked": [
+   {
+    "rank": 1,
+    "audience": "Therapists, counselors, coaches, and healing practitioners",
+    "rationale": "The system's native vocabulary (scripts, arrests, attachment, Erikson) is theirs; Lincoln intended it for healers; highest willingness to pay for certification; the ethics-forward framing lands. Entry: CE-style workshops, practitioner certification."
+   },
+   {
+    "rank": 2,
+    "audience": "Personal-growth and spiritual seekers (incl. Atma's existing yoga/teaching audience)",
+    "rationale": "Soul types, conversion arcs, and self-reading are natural consumer products; Atma already owns distribution to a Taiwan-based teacher cohort and a monk-to-marketer brand audience. Entry: books, self-assessment tool, persona quiz."
+   },
+   {
+    "rank": 3,
+    "audience": "Leaders, managers, HR, team-builders",
+    "rationale": "Book 3 Ch 4 already maps personas to leadership, team composition, client relations, and conflict resolution. Corporate budgets. Requires the most secularized framing. Entry: workshops, keynote."
+   },
+   {
+    "rank": 4,
+    "audience": "Sales, negotiation, dating/relationships general consumers",
+    "rationale": "Largest and hungriest, but attracts manipulation-seeking buyers the ethics doctrine must screen; also the segment most likely to trigger pseudoscience criticism. Handle with the consent doctrine front and center."
+   },
+   {
+    "rank": 5,
+    "audience": "Researchers and academics",
+    "rationale": "Not a revenue audience but a legitimacy audience. The books explicitly invite testing of the nine-sections hypothesis; a 'Research' page soliciting collaboration converts the biggest weakness into brand proof."
+   },
+   {
+    "anti_audience": "Lawyers, interrogators, surveillance/security buyers: explicitly contra Lincoln's wishes; state the refusal publicly as a trust signal."
+   }
+  ],
+  "hooks_and_angles": [
+   "Every face tells a story (existing preface language, already strong)",
+   "A dead psychologist's unpublished discovery, taught by the one student he trained to teach it",
+   "Not fortune-telling. A hypothesis with a lineage: Darwin to Ekman to Lincoln",
+   "Your face is a record, not a verdict (trace vs destiny; anti-physiognomy stance as headline, not footnote)",
+   "The 4,800 rejections: the Condon twins study as the signature illustrative anecdote of invisible emotional history",
+   "Find your Service Persona (quiz/lead magnet); Find your Family Script (deeper paid assessment)",
+   "The healed version of you already has a name (conversion arcs)"
+  ],
+  "product_ladder_hypothesis": [
+   "Free: persona quiz + nine-sections guided practice tool + email course",
+   "Books (4-volume series)",
+   "App: EmoTrace training + concentration timers + persona reference",
+   "Cohort course: the four skills over N weeks",
+   "Practitioner certification (therapists/coaches)",
+   "1:1 readings and corporate workshops at the top"
+  ],
+  "objection_handling_map": {
+   "isn't this phrenology": "Lead with the books' own repudiation chapter; traces are acquired records of expression habit, not innate morphology; personas are energy patterns, not face shapes.",
+   "where's the evidence": "Named lineage of established science plus an explicit statement of what remains hypothesis and an open invitation to test it.",
+   "is this ethical": "Consent doctrine, anti-forensic stance, anti-stereotyping doctrine, published anti-audience.",
+   "is this religious": "Depends on chosen positioning; the secular-psychological frame with optional spiritual depth serves the widest funnel."
+  }
+ },
+ "resolutions_from_atma_2026_07_07": {
+  "persona_doctrine_resolved": "Confirmed: zero morphology, zero strict physiognomy, explicit rejection of Chinese-style feature mapping. Service Personas (Atma's preferred term, deliberately creating distance from Lincoln's 'soul types') are read as a CONSTELLATION of accumulated emotional-experience traces indicating a generalized archetype: a mood, not a physiology. No specific nose, jaw, or feature ever maps to a persona. Supporting observation: comparing images across category members (warriors vs monks) yields an identifiable but non-specific visual reference. Persona identification is acknowledged as the LEAST scientifically grounded of the three pillars; trace reading and family scripts carry substantial accepted academic underpinning, personas rest mainly on archetype literature. Standing rule: every gap in the system must always be identified. Doctrine of non-limitation: every human possesses the potential for all archetypes; a reading identifies only what is currently most developed, never what a person cannot be or become. Personas function as a communication tool in readings, naming potentials that are present but not yet realized. Full treatment exists in the complete Book 3 (not provided in these files); the introductory chapter will be revised to make the doctrine explicit. Book editing is out of scope for the website project.",
+  "rights_resolved": "Atma holds a written permission note from Dr. Lincoln plus a living witness familiar with the situation. No sale or repackaging of Lincoln's existing literature; Atma's material is original expression built on the system. Website copy note: lead with the permission/lineage framing rather than the phrase 'fair use' (fair use is a legal defense, not a marketing position; the written permission is the stronger and simpler public story).",
+  "book_4_resolved": "Book 4 = Developmental Arrests, not yet written or edited. All arrest content in the provided files is leftover reference to Lincoln's original treatment. Atma's version will treat arrests substantially differently and will most likely OMIT the SIDS 'soul choice' and Ice Cube/sociopath material. The post-Ice-Cube arrests carry meaningful academic support and remain in scope. Web implication: arrest content should not appear on the launch site in Lincoln's original framing."
+ },
+ "workflow_and_deployment_2026_07_08": {
+  "SUPERSEDED_BY": "reconciled_build_architecture_2026_07_12 (locked). This block corrected 2026-07-12; old GoDaddy-only / Square-Appointments / 8-public_html assumptions retired.",
+  "github_repo": "https://github.com/justatma/american_face_reading",
+  "local_repo": "/Users/atma/gh_all/american_face_reading (flat repo under gh_all; JSON index in repo root, document folder for drafts).",
+  "deployment_CORRECTED": "All sites deploy through GitHub Actions, not FileZilla. The five static content pages + PHP contact form live on GoDaddy (FTPS via GitHub Actions, scoped FTP account). The old /Users/atma/Documents/8-public_html path is DEAD (snapshotted + deleted 2026-07-09). Version-control flag CLOSED: site files are in the repo with full history.",
+  "split_hosting_CRITICAL": "Two hosts. Static brochure (Home, Readings, The Science, About, Privacy, Contact) = GoDaddy. The booking/intake application (7-step wizard + backend) = a SEPARATE Cloudflare deployment (Next.js/Workers/Pages). The Book-a-Reading CTA on the GoDaddy pages routes to the Cloudflare app.",
+  "git_hygiene_rules": "git status after every git sequence; git log --oneline -1 after every push."
+ },
+ "data_and_research_architecture_2026_07_08": {
+  "principle": "The session is the client's. Every data policy is stated plainly, not buried in legalese; transparency is on-brand for the anti-BS positioning.",
+  "data_inventory": {
+   "photographs": "Client's own forward-facing photo(s), sometimes photos of third parties (partner, parent, child). Biometric and sensitive.",
+   "intake_form": "Reading focus and any personal context the client provides.",
+   "session_recording": "Video/audio of the 75-minute session.",
+   "transcript": "Full transcript, deliberately capturing BOTH sides separately: the client's questions and comments, and Atma's reading and report. This separation is intentional and important for the research use.",
+   "pdf_report": "The written report delivered to the client.",
+   "payment": "Handled by Square; card numbers are not stored by Atma.",
+   "contact_and_list": "Email/contact for delivery and booking; Mailchimp for the list."
+  },
+  "retention_locked": {
+   "recording": "Cloud recording destroyed 72 hours after the session; client told to save their copy.",
+   "pdf_report": "Most likely KEPT on file so the client can retrieve it later; client may request total deletion at any time.",
+   "transcript_research": "De-identified transcript retained for the academic/research archive (see research_project).",
+   "photographs": "RECOMMENDATION (Atma to confirm): photos used only to prepare and deliver the reading, then deleted once the report is finalized; NOT retained in any research archive. Rationale: biometric retention is the highest legal exposure, and Atma's stated research interest is text/transcript-based, not a face-image ML dataset. A face-image dataset would be a separate, much heavier consent/legal undertaking."
+  },
+  "research_project": {
+   "purpose": "Atma is building a private research archive of de-identified reading transcripts to mine as the dataset grows: statistical methods, machine-learning algorithms, and AI analysis, to study whether and how well the practice works. This directly serves the honest-hypothesis positioning (data is what turns hypothesis into evidence).",
+   "what_enters": "The transcript only: client's questions/comments plus Atma's reading/report, with name, contact details, and identifying specifics removed before entry.",
+   "consent_recommendation": "SUPERSEDED by research_consent_final_2026_07_12 (LOCKED). Model: plain-text academic-research ACKNOWLEDGMENT shown at the photo step (not a checkbox), the only checkbox there being biometric-photo consent; the actual OPT-OUT is a one-click link in the report-delivery email; withdrawal up to de-identification.",
+   "third_party_photos_flag": "When a client sends a photo of someone else (mother, partner, child), that person has consented to nothing. RULE (recommended): third-party readings are NEVER added to the research archive; only the consenting client's reading of themselves is eligible.",
+   "anonymization_honesty_flag": "'Fully anonymous' is a claim to pressure-test. A rich narrative transcript (childhood history, family detail) can be re-identifying even with names removed. Accurate public claim is 'de-identified': name, contact, and identifying specifics removed, archive kept confidential, nothing published that could identify a client. Do not over-promise irreversible anonymity on narrative content.",
+   "withdrawal_window": "Once a transcript is de-identified and folded into the larger set, an individual thread cannot be pulled back out. Policy: a client may withdraw and have their transcript destroyed entirely UP TO the point of de-identification/incorporation; after that, isolation is impossible. State this plainly.",
+   "no_sale_no_share": "The archive is never sold and never shared.",
+   "chinese_data_blanket_exclusion_2026_07_12": "No Chinese client data ever enters the research archive, as a blanket policy. With the future China 'zero-retention mode', nothing Chinese is collected or kept."
+  },
+  "service_providers": "CORRECTED 2026-07-12: Square (payment ONLY), Cal.com (headless scheduler + Zoom-link generation), Cloudflare R2 (private photo storage), Resend (transactional email), Mailchimp (journal marketing list only), Zoom (session). Named as processors on the Privacy page."
+ },
+ "privacy_page_decisions_2026_07_08": {
+  "status": "Full first draft written (Privacy Policy docx).",
+  "deliberate_choice_plain_labels": "The privacy page intentionally does NOT use generative-grammar persuasion headlines. A reference document that people scan for a specific answer wants plain, scannable section labels (What I Collect, Your Photographs, The Research Project). This is a considered exception to the headline rule, not a lapse.",
+  "voice": "Plain-spoken, first person, direct, no legalese theater; 'we don't hide behind legalese' is itself on-brand. Not gonzo; a data policy stays clear and calm.",
+  "open_decisions": [
+   "RESOLVED: photos deleted after report finalized (completed) or at 120-min cart expiry (abandoned); never in research.",
+   "RESOLVED: research consent = plain-text acknowledgment at intake + one-click opt-out link in the report-delivery email (research_consent_final_2026_07_12).",
+   "RESOLVED: withdrawal window = up to de-identification/incorporation; stated plainly.",
+   "RESOLVED: research is non-biometric only; no face-image dataset; biometric never enters research.",
+   "RESOLVED: recording lifecycle wording is 'permanently deleted' / 'destroyed' and it is literally true (Zoom permanent-delete API, no 30-day trash).",
+   "STILL OPEN (content, not a build blocker): physical mailing address for the legal/CAN-SPAM contact block, to be supplied by Atma before Privacy ships."
+  ]
+ },
+ "legal_flags_for_counsel_2026_07_08": {
+  "note": "Claude is not a lawyer; this is not legal advice. These are the exposures a data practice like this typically triggers; run past qualified counsel before launch.",
+  "biometric_laws": "Facial photographs are biometric. Illinois BIPA has real teeth (written consent, published retention schedule, private right of action, statutory damages); Texas and Washington also regulate. Destroying the recording at 72h helps; photo and transcript retention are the exposure.",
+  "gdpr_eu": "EU clients: facial data and health-adjacent narrative are special-category data requiring explicit consent, with erasure rights and cross-border rules.",
+  "pipl_china": "SERIOUS given the China client base. China's PIPL treats biometric as sensitive personal information requiring separate explicit consent, and heavily restricts transferring personal information OUT of China. Holding Chinese clients' transcripts/photos on a US server for research may be directly constrained. Flag early.",
+  "ccpa_cpra_california": "Sensitive-personal-information disclosure and opt-out obligations.",
+  "research_ethics": "For genuine academic publication later, IRB/ethics review and documented informed consent become relevant. Building clean consent now is what keeps the eventual dataset publishable rather than academically radioactive.",
+  "scope_correction_2026_07_12": "US-only operation; not selling to or operating in the EU; no Chinese client data in the archive. PIPL out of scope for the archive (no Chinese data retained). GDPR handled only for incidental EU-geo visitors by the edge seam, which presents the research choice as affirmative opt-in at report delivery. BIPA is the live one: US biometric photos, written consent, published retention schedule, enforced deletion."
+ },
+ "pages_status_2026_07_08": {
+  "what_this_is_and_isnt": "v4 clean; Atma editing.",
+  "readings": "v3; Atma editing. Headlines rebuilt from generative grammar.",
+  "privacy_policy": "v1 full draft delivered.",
+  "home": "v1 draft delivered (hero direction: concept headline 'Your Whole Life Is on Your Face' + promise subhead; 'Everybody deserves to be seen' as brand-thesis close).",
+  "the_lineage": "Rough lineup delivered.",
+  "the_practice": "Rough lineup delivered.",
+  "about": "Rough lineup delivered.",
+  "contact": "Rough lineup delivered."
+ },
+ "site_architecture_settled_2026_07_09": {
+  "ruling": "Home is the belief page and carries what was drafted as What This Is (And Isn't): origin story, the scam, the 43-muscle mechanism, Lincoln's unpublished map, the rules, the unfinished-story close. It ends with one CTA to Readings, which is the money page. Home plus Readings is the entire conversion path and ships first.",
+  "third_page": "A deeper page exists, named THE SCIENCE (not About: Atma's biography now lives inside Home's origin story, leaving an About page with no job). The Science carries what has no home: Darwin and Ekman at depth, Condon's twins and the ~4,800 micro-rejections, Lincoln's ward at full length, the four skills, the nine-sections annotated face, and the honest-edge block with an open invitation to researchers. Course waitlist capture sits at its foot. This is the page a skeptic sends another skeptic and the page a therapist reads before trusting Atma.",
+  "launch_nav": "Home, Readings, The Science, plus the Book a Reading button. Privacy and Contact live in the footer. Home and Readings can ship first; The Science can follow without the site looking unfinished.",
+  "superseded": "The earlier six-page phase-one map (separate Home hero/offer strip, What This Is, The Lineage, The Practice, About) is retired. The Lineage and The Practice merge into The Science; About is dissolved."
+ },
+ "headline_masterclass_2026_07_09": {
+  "source": "Atma rewrote every headline on the Home page (Home_page_v5.docx) after Claude repeatedly produced descriptive headlines. These are the canonical examples. Study them before writing any headline for this project.",
+  "atma_headlines_verbatim": [
+   "You won't believe how 30 seconds changed my life.",
+   "Letting you in on a scam.",
+   "Your face tells me your secrets",
+   "A scientific trail you can rely on",
+   "The rules empower you",
+   "It's your story, I just help you write the next chapter."
+  ],
+  "the_pattern": "A headline is never a description of its section, however well aimed. It is a relational sentence about the reader's relationship to Atma or to their own life, and it opens a loop that the paragraph beneath it closes. Almost every one contains you/your/me/my. Test: strip the section away; does the headline still do something TO the reader? If it only labels content, it is dead.",
+  "specific_moves": [
+   "Recruit, don't announce: 'Letting you in on a scam' builds an alliance against a common enemy before the argument is made. It does not say 'physiognomy is fraudulent.'",
+   "Convert defensive content into reader power: the disclaimers section is headlined 'The rules empower you.' Never headline limits as limits. Claude's failures here were 'The Refusals' and 'Nothing Here Should Feel Like a Risk' (still descriptive, just friendlier).",
+   "Threat and thrill are allowed: 'Your face tells me your secrets' is dangerous, present tense, second person.",
+   "State the reader's takeaway, not the topic: 'A scientific trail you can rely on' promises reliance. Not 'The Map and Its Edges.'",
+   "Hand agency back at the close: 'It's your story, I just help you write the next chapter.'",
+   "The set forms an EMOTIONAL arc, not a logical outline: intrigue, conspiracy, danger, trust, empowerment, agency.",
+   "Direct-response devices are permitted and correct ('You won't believe...'). The rigor of the body earns the tabloid register of the headline. HEADLINE IS THOMPSON; BODY IS GLADWELL. Claude's error was writing headlines in the body's register.",
+   "Length rule is softer than the earlier 6-8 word statement: the real constraint is that it lands in one breath (4 to 11 words observed). Never any throat-clearing."
+  ],
+  "claude_failure_modes_named": "Descriptive headlines dressed as aimed ones; announcing the section's subject; friendlier labels mistaken for working headlines; timidity about direct-response phrasing; writing the headline in the body's voice.",
+  "resolved_ruling_on_worn_tropes": "SETTLED IN ATMA'S FAVOR, July 9 2026. Claude challenged 'You won't believe how 30 seconds changed my life' as a promise about Atma's life that failed the so-what test. Claude was wrong, and the error is instructive: a HERO headline's job may be CURIOSITY (open a loop), not PROMISE. The promise test belongs to promise slots. Applying it to a curiosity hook is a category mistake. Claude also disguised aesthetic distaste ('most worn phrase on the internet') as strategic objection. Atma's doctrine, now canon: worn tropes ('You won't believe,' 'new,' 'never before') still fire the same cognitive machinery and still work. They fail only under two conditions: (1) the copy beneath does not RESOLVE AND REWARD the pattern recognition the trope triggered, and (2) the MEDIUM drains rather than lends credibility. The same headline in a PPC ad or a HuffPost-style feed reads as manipulation and accelerates diminishing returns; in a reputable context the outlet's credibility transfers and buys the headline benefit of the doubt. On this homepage both conditions are met: the loop closes within one paragraph, and the surrounding page attacks its own field's frauds. Do not relitigate.",
+  "distribution_corollary_from_claude": "Atma's own medium-is-the-message principle implies the H1 will be lifted OUT of its credible context automatically: the Open Graph share card, the Google search snippet, any paid social. In those slots the headline appears with no first paragraph to close the gap and no site credibility to lend. RULE: the H1 stays as written; the OG title, meta description, and any ad headline are written SEPARATELY for media that lend no context."
+ },
+ "home_page_architecture_change_2026_07_09": {
+  "what_happened": "Atma rewrote the What This Is (And Isn't) copy INTO the Home page (Home_page_v5.docx). The origin story now opens the site; the doctrine (anti-physiognomy, the 43 muscles mechanism, Lincoln's unpublished map, the refusals, the non-limitation doctrine) all live on Home. The page closes with a single CTA to Readings.",
+  "consequence": "The site map's Home page (hero + offer strip + proof + 'what people bring me') is superseded. The belief ladder is now: Home persuades and converts belief, Readings sells.",
+  "open_decision": "Does a separate What This Is (And Isn't) page survive as a shorter science/doctrine reference, dropping nav to four items if not? Atma to decide; site map must be revised either way.",
+  "note_on_missing_elements": "Home v5 carries no price, no offer strip, no proof/testimonial section, and no statement that a reading is for sale. Intentional or not, this is a decision to make consciously: the page is a belief instrument, not a storefront."
+ },
+ "home_page_v5_proofreading_2026_07_09": [
+  "'America Face Reading' should be 'American Face Reading.'",
+  "'Your facial structure is your parents' doing, and they tell me nothing' : subject-verb mismatch (structure / they).",
+  "'Your reading is part of in a balanced mix' : stray 'of.'",
+  "'not a lie detector or a fortune telling' : wants 'or a fortune teller.'",
+  "'genetics derived bone structure' : wants a hyphen, genetics-derived.",
+  "Stray spaces before punctuation: 'in you ,' and 'on your face .'",
+  "Lincoln appears as 'Michael J. Lincoln' on first mention in the lineage section, then 'Dr. Lincoln' later. Acceptable, but confirm against the always-Dr. rule."
+ ],
+ "headline_masterclass_round2_2026_07_11": {
+  "source": "Atma rewrote the Readings page headlines (Readings_Page_v4.docx); Claude rewrote the body to match (v5). New lessons, additive to the first masterclass.",
+  "lessons": [
+   "Address the reader's flattering secret belief, not their deficit. 'You know you are special. I can tell you why.' validates a suspicion they already hold and promises evidence. Claude's 'Finally Understand Why You Are This Way' diagnosed a lack. People buy confirmation of the secret self more readily than repair of a broken one.",
+   "The hero and the close are one loop: hero names the felt-but-unarticulated self; close delivers 'Get the insights into yourself that you feel, but can't put into words.' The body between must carry the thread.",
+   "The 'here is' ban is on ANNOUNCING information, not the literal words. 'Here's what you will get out of your session' promises value (gets), which is allowed; 'Here is exactly what happens' announces process, which is not. A gets-headline demands a gets-body: every sentence lands on something received, logistics reframed as value.",
+   "A character trait can be a guarantee: 'You can rely on my obsession with your privacy.' Personalize trust sections.",
+   "Split risk from privacy; they are different reassurances. Reschedule belongs with risk, not privacy.",
+   "'ZERO' in caps: direct-response typography is permitted when the claim is literally true.",
+   "A causal-claim headline ('Your relationship struggles aren't random') obligates the body to open by arguing the claim before giving examples."
+  ],
+  "canon_flags_pending_atma": [
+   "'American Facereading' (one word, in his v4 headline) vs 'American Face Reading' (brand elsewhere): pick one.",
+   "'The man who INVENTED American Facereading' (Readings) vs 'the man who DISCOVERED it' (Home): pick one verb per canon, or rule that both are allowed.",
+   "Hero subhead punctuation: 'The secrets to who you are written on your face.' likely wants a comma after 'are'; misreads without it.",
+   "Section-3 example slot: Atma deleted 'Your mother' leaving the clause; Claude filled with degendered 'The parent' in case the cut was about mother-blame density. Restore 'Your mother' if the cut was positional only.",
+   "Readings link line updated to point to The Science (What This Is retired); confirm."
+  ]
+ },
+ "pages_status_2026_07_11": {
+  "home": "v5, Atma-rewritten, canon. Minor proofreading list pending.",
+  "readings": "v5: Atma's v4 headlines verbatim + Claude's body rewrite to match. Awaiting Atma's pass on the rewritten body and the canon flags.",
+  "the_science": "v4: combinatorics rebuilt, bone claim dropped, blind-athlete reframed, century-neglect anchored, publishing fact corrected (books in print; only journals refused), close per Atma. Endnotes 1-12; verify all before launch, especially the Games year in note 6.",
+  "privacy_policy": "v1 full draft delivered.",
+  "contact": "Rough only; trivial build.",
+  "about": "v2: biography restored (Minnesota + educational/cognitive psych + 9 years monastic), two meaning-narrating sentences cut, Atma's edits adopted. LA paragraph still needs his fact-check."
+ },
+ "pages_status_2026_07_09": {
+  "home": "v5, Atma-rewritten. Now carries the full What This Is narrative plus the origin story. Headlines are the project's canonical examples. Minor proofreading pending.",
+  "what_this_is_and_isnt": "ABSORBED INTO HOME v5. Fate of a standalone version undecided.",
+  "readings": "v3; Atma editing. Headlines rebuilt from generative grammar but should be re-checked against the headline masterclass (they may still be descriptive-aimed rather than relational).",
+  "privacy_policy": "v1 full draft delivered. Plain scannable labels by deliberate exception to the headline rule.",
+  "the_lineage": "Rough lineup delivered. NOTE: much of its content now lives on Home v5; scope must be rethought.",
+  "the_practice": "Rough lineup delivered.",
+  "about": "Rough lineup delivered. NOTE: the origin story now opens Home, so About needs a different spine.",
+  "contact": "Rough lineup delivered."
+ },
+ "canon_updates_2026_07_08": {
+  "what_this_page_status": "Atma personally rewrote the weakest passages of the What This Is (And Isn't) page across two edit rounds; his edited text is canon (v4 clean). He notes remaining dissatisfaction, so the page is near-final, not final.",
+  "lie_detector_doctrine_changed": "The hard anti-forensic refusal ('no interrogations, no depositions, I keep Lincoln's rule') is DEAD as site copy. Atma replaced it with a positive purpose statement: 'Lincoln developed this work so we could see each other comprehensively and compassionately. Everybody deserves to be seen.' No refusal claims anywhere on the site; the earlier anti-audience-statement recommendation is retired. This also removes the tension with the LA law-enforcement history.",
+  "brand_thesis_candidate": "'Everybody deserves to be seen' emerged from Atma's edit and reads like the brand thesis. Candidate for homepage or hero use.",
+  "voice_lessons_from_atma_edits": [
+   "Answer a question with the obvious thing, then explain: 'What is left to read?' 'The face.'",
+   "Numbers everywhere: 43 muscles, 30 seconds, 35 years old, first 5 years, 15-year apprenticeship. Specificity is the register; invented or fake-precise math is not.",
+   "Explain the causal mechanism domestically: environments don't vary much day to day, so persistent parenting patterns trace persistent emotion onto the face. Why, not just what.",
+   "Sell inside the doctrine: the reconstruct-the-first-five-years claim and the redemptive 'what you have let go of and replaced with something better' carry the product's value in the trust page.",
+   "First person, never third-person pose: 'me telling you where the map runs out,' not 'a man telling you.'",
+   "Functionalize sentiment: 'people who love you, always' became 'people who care and listen to you.'",
+   "Promises must be conditionally true: plain description always, professional referral only 'if it's debilitating.'",
+   "Refusals become purpose statements, not prohibition lists.",
+   "Let one motif finish the page: unfinished story, my story, how you finish the story.",
+   "Concrete beats categorical in mockery: 'measuring eye span or cheek girth' over 'skull maps and theater.'",
+   "Headlines and subheads are machinery, not labels. A subhead names a topic ('Track Record') and dies; a working subhead manufactures the next reader-state and drags the eye down ('Nobody Flies a Man Across the World for a Parlor Trick'). Every subhead is a fresh curiosity beat that reopens the door right as the previous section was about to let the reader leave. The hero must carry a stated Big Promise headline plus a secondary-promise subhead (two hooks: one ambitious, one safe) before any body copy. This was Claude's single biggest craft miss; do not repeat it on any page."
+  ],
+  "readings_page_facts_locked": [
+   "HEADLINE RULE (generative grammar): before phrasing, test the reader's involuntary reaction to the headline's underlying structure. If the reaction is 'so what' (a claim about Atma's ability, not a promise to the reader), 'duh,' or 'huh,' the headline is dead regardless of wording. A working headline promises the reader something in their own life. Hard constraints: 6-8 words maximum; never any throat-clearing or announcement ('Here is,' 'Let me tell you'); just say the thing. Aiming a headline means the reader instantly supplies their own specific instance (a face, an exhaustion) from the words.",
+   "Proof rule: client counts are banned. 70 reads small; 'hundreds' invites doubt; any number turns warmth into a tally. The proof is the 15-year apprenticeship to Dr. Lincoln, the discoverer, plus the sole-public-teacher fact. Do not weld apprenticeship years to a client count as if they were one kind of evidence.",
+   "Session length: 75 minutes (strip may say '60 to 90'; prose says 75).",
+   "Lincoln is always 'Dr. Michael J. Lincoln' on formal reference.",
+   "'Where the map runs out' phrasing rejected as too obtuse for the readings page.",
+   "Reschedule: small-type issue, generous. Up to an hour or two before start, no cost, no explanation (sudden things happen suddenly).",
+   "Refund/safety-valve mechanics (locked): control appears ~60 seconds into the session, after greetings and any explanation, NOT immediately. Visible for 10 minutes with a soft countdown timer. On press: session pauses, Atma's video hides, reader gets a beat, then chooses to resume (most do) or end. Ending inside the window cancels the transaction; funds reverse to card in 1-3 business days per banking infrastructure. After 10:00 the control retires. Framing: the pause is also a chance to realize the value and continue.",
+   "Cloud recording destroyed 72 hours post-session; client told to save their copy.",
+   "Big Promise for readings hero (Atma-approved direction): 'I can read the first five years of your life off a single photograph.' Secondary promise: you keep the recording, the report, and the experience of being seen regardless."
+  ]
+ },
+ "website_planning_inputs_for_next_session": {
+  "commercial_reality_2026_07_07": {
+   "domain": "AmericanFaceReading.com owned, configured, awaiting file upload to Linux server. Fully standalone brand; zero cross-referencing with atma.marketing, atma.blog, or any other Atma property (one-thing-per-brand doctrine).",
+   "readings": "Bookable now. ~$450, 60-90 minutes, requires one forward-facing photo minimum (clients often add photos of partners/parents/children for feedback). Deliverables: guided-form-driven session, PDF report, full recording. Clients worldwide.",
+   "books": "None officially published. Book 1 nearest completion; publishable within roughly a week of final editing. Atma is building a dedicated editing engine (LibreChat realm, large context, specialized editor, persistent database memory) for that pass. Chinese translation of Book 1 begun by students; official Chinese version planned after US English release.",
+   "courses": "Intro taught many times in varying forms; Family Scripts course taught in full; Service Personas course taught in full; Developmental Arrests course never taught but PRE-PAID by two students (outstanding obligation and a natural forcing function). Automatable intro course not yet built; components identified and layout designed; build intended with Claude Design.",
+   "existing_market": "China is the largest market to date: ~70 readings plus multiple workshops via self-organized student groups in Beijing (primary), Taiwan, Hong Kong. Demographics: more women than men, middle-aged, core 25-50, spiritually inclined with yoga interest but LEADING with practical concerns (work, parents, family). US audience has not coalesced; discovering it is an explicit testing objective for the site.",
+   "voice": "Iconoclastic informal explainer with academic background; drinks bourbon; makes fun of pseudoscience. Does not coddle new-age audiences but must remain legible to them.",
+   "social_proof": "Reality TV: episode of 'Ruby' (IMDb-listed); other IMDb credits not face-reading-specific. Law enforcement: real LA incident with witnesses; documented private-investigator request that did not proceed. Additional stories require deliberate memory-mining; Atma self-describes as not a storyteller.",
+   "site_copy_asset": "Atma has already written a 'what this is and what this is not' piece intended for the website. NOT YET SHARED; request it at the start of website copy work.",
+   "quiz_ruling": "Permitted in principle, execution-dependent; must maintain brand and honesty doctrine; valued partly as audience-insight instrument."
+  },
+  "remaining_open_items": [
+   "Testimonial harvest: do recorded readings and permissions exist among the ~70 Chinese clients and US clients for public social proof?",
+   "Chinese-language page (/zh) at launch vs later, given existing demand.",
+   "Usability of the generated image library for web (style consistency, AI-look risk).",
+   "Booking mechanics: integrate existing intake form vs scheduling layer; payment capture method for $450 readings.",
+   "LA law-enforcement story: gather details and witness accounts before publication; reconcile framing with Lincoln's anti-forensic stance."
+  ],
+  "ready_made_site_ingredients": [
+   "Origin story (canonicalize)",
+   "Lincoln legacy page",
+   "Lineage/science page",
+   "Ethics page (differentiator)",
+   "Four-skills curriculum page",
+   "31 personas library (quiz-linked)",
+   "31 scripts library (teaser depth)",
+   "Nine-sections interactive practice",
+   "Books hub with image assets",
+   "Research collaboration invitation",
+   "The anti-audience statement"
+  ]
+ },
+ "science_page_corrections_2026_07_11": {
+  "lincoln_publishing_fact_CORRECTED": "Dr. Lincoln published prolifically across his career. He never published his FACE READING work in academic journals. Never write 'Lincoln never published' unqualified. The precise claim: the face reading map has never been through peer review / never published in academic journals.",
+  "always_dr_lincoln": "Always 'Dr. Lincoln' on reference. Bare 'Lincoln' is an error.",
+  "neglect_predates_1954": "The scientific neglect of the face runs from Darwin (1872) forward, not from 1954. Darwin's hypothesis was actively ignored for ~a century; the 1954 Handbook of Social Psychology verdict formalized an already-old neglect. Frame the antagonist as the long shrug, with 1954 as the hardening, not the start.",
+  "eight_emotions_not_settled": "'Every face on earth speaks the same eight words' is a good HEADLINE but the eight-basic-emotions count is NOT a settled academic finding. Body must frame it as Ekman's argument and flag the live debate (Barrett cited as the dissent). Never present the count as conclusive.",
+  "muscle_count": "43 (196 in the paper was a typo).",
+  "vedic_off_site": "No soul/reincarnation/Vedic material anywhere on the site.",
+  "close_pitches_the_reading": "The Science close pitches the READING, not the course. It lands on: sitting in a reading, resolution of long-borne issues, being seen comprehensively/compassionately, realizing what you carry was not your fault (environment you couldn't choose), then turning that lens on those who formed you (also victims of their environments), opening the path to forgiveness. This is why Dr. Lincoln called it heart-centered. Text is Atma's.",
+  "killed_constructions": "The 'alphabet / holding a letter in a language you can't read' motif is cut as opaque. Weak headlines 'He Filled Out Their Files Before He Met Them' and 'The First Person Face Reading Heals Is You' replaced. 'The Part I Can't Prove Yet' replaced with 'The Part Science Hasn't Caught Up With' (the issue isn't Atma's inability to prove, it's that the field hasn't tested it).",
+  "status": "The Science v4 delivered. Atma's inline comments and edits from v3.5 all applied.",
+  "lincoln_publishing_fact_CORRECTED_AGAIN": "FINAL, verified with Atma: Dr. Lincoln PUBLISHED face reading books (in print, available via the Talking Hearts site). The ONLY thing that never happened is ACADEMIC-JOURNAL publication / peer review. Correct phrasing: 'His books are still in print; what the work never got was an academic journal willing to publish it.' Two prior drafts got this wrong ('never published the face reading'). Never repeat that error.",
+  "combinatorics_must_be_built": "The eight-emotions-to-infinite-range point must be CONSTRUCTED, not gestured at. Working sequence: (1) 40+ muscles, several positions each -> tens of thousands of configurations; (2) emotions blend; (3) sequence/time changes meaning; conclude the face is the densest signaling instrument the body owns. 'Run the arithmetic and it stops being arithmetic' was a fumble of the page's best opportunity.",
+  "no_unsupported_overstatement": "Cut claims lacking support: the 'grooves reach into cartilage and bone' remodeling claim is dropped (only soft-tissue/resting-face residue is claimed). 'Cleanest cut of all' editorializing removed; the blind-athlete study is one brick, not the capstone. Do not assert a 'century of neglect' without anchoring it (Darwin 1872 + 1954 Handbook).",
+  "verify_before_launch": "Blind-athlete Games year: draft says 2004; Matsumoto & Willingham 2009 covers multiple Games. Confirm the exact year/Games before publishing, or generalize."
+ },
+ "about_page_2026_07_12": {
+  "design_principle": "About does NOT re-tell the origin story; Home owns it. Re-telling it would make the second telling read as thin. About answers 'who is this person, and why him,' the question Home leaves open.",
+  "hero": "'The Only Person Dr. Lincoln Trusted to Teach This' + sub 'Fifteen years at his side. Hundreds of faces since. One promise to keep.'",
+  "sections": "(1) the succession/only-student framing; (2) what 15 years of apprenticeship actually means + the Sanskrit/monastic depth as the same lifelong question; (3) TV as proof (Ruby named); (4) China as unfakeable demand proof; (5) the LA story = why he won't use it forensically; (6) short bio block + CTA.",
+  "imdb_verified": "Ruby, Style Network, episode 'Ruby Goes Under,' aired 2011, credited 'Self - Face Reading Expert.' IMDb nm2098577 also lists Sanskrit Expert (Dreadlocks Story), Eastern Philosophy Expert (Finding God in the City of Angels), Amish in the City. Link the IMDb page; name Ruby specifically.",
+  "la_story_handling": "Written only to the confirmed level: real, LA, legally-loaded context, reading performed, plus a documented private-investigator request later declined. Framed as WHY he refuses forensic use (ties to Lincoln's courtroom prohibition, now expressed as a positive trust rule, not the old anti-audience refusal list). NO names/case/outcome until Atma confirms with witnesses. Flagged as the paragraph most needing his fact-check.",
+  "bio_facts_to_confirm": "'nine years' monastic; 'four books' (3 drafted + 1 unwritten); About stays face-reading-only and does NOT cross-reference the marketing/writing/Power-of-Nothing brands (one-thing-per-brand doctrine).",
+  "status": "About_Atma_v1 delivered.",
+  "v2_corrections": {
+   "biography_restored": "Atma's full education is canon and must appear: SIX years at the University of Minnesota, graduate work in EDUCATIONAL and COGNITIVE psychology (Western science of mind), THEN NINE years as a monk living an ascetic life, translating Sanskrit texts, meditating on mantras hours a day. Do not compress this to 'I studied Sanskrit.' The two-educations spine (mind measured / mind watched) is the root of his authority.",
+   "meaning_narration_cut": "Two sentences deleted as UGH by Atma, both narrating the story's meaning instead of trusting the facts (rule 16, no signs on the door): 'It felt like the same question I had been asking my whole life, finally with a method attached' and 'other people's cameras kept reaching for me as the one who knows how to look.' RULE: end sections on the last hard fact; never gloss the meaning.",
+   "adopted_edits": "Hero softened to 'The Person Dr. Lincoln Trusted'; 'He prepared Atma to carry on his work'; 'only student to write the books and create a training course'; China section rewritten; new section headers kept."
+  }
+ },
+ "launch_page_set_status_2026_07_12": "DRAFTED: Home (v5, Atma canon), Readings (v6, proofed), The Science (v4), Privacy (v1), About (v1), Contact (rough). All page drafts now exist. Remaining before build: Atma's final passes, the pre-launch fact-checks (Science endnotes + blind-athlete year; About LA story), testimonial harvest, and the legal review (BIPA/GDPR/PIPL).",
+ "reconciled_build_architecture_2026_07_12": {
+  "status": "LOCKED. Agrees line-for-line with 'Build Spec - Claude Code.md'. No open items.",
+  "naming_guard": "Always 'Atma' / 'American Face Reading'. Never 'APMRA'.",
+  "phase_scope": "Phase 1 = the booking/intake backend + re-implementation of the 7-step wizard (front-end prototype Intake.dc.html already exists as the visual/interaction reference; keep all copy verbatim). Phase 2 (separate build) = the in-session Zoom overlay / 10-minute safety-valve widget.",
+  "stack": {
+   "app": "Next.js (or Remix) on Cloudflare Workers/Pages",
+   "db": "Postgres (Neon/Supabase)",
+   "object_storage": "Cloudflare R2, private bucket, SSE; signed short-TTL URLs for Atma's review only; no public URLs",
+   "scheduler": "Cal.com headless (API v2 + webhooks); 90-min event type; rolling 21-day window; Cal.com generates the Zoom link",
+   "payment": "Square (Web Payments SDK client-side tokenization + Payments/Refunds API); payment ONLY",
+   "marketing_email": "Mailchimp; journal list only; fires at intro on journal_opt_in; double opt-in; tag 'journal'",
+   "transactional_email": "Resend (React Email); reply-to atma@atmangroup.org",
+   "delayed_tasks": "Cloudflare Durable Object Alarms, one DO per session, deterministic id via idFromString(session_id); NO global CRON"
+  },
+  "session_duration": "Client-facing copy ALWAYS says 75 minutes. Cal.com blocks 90 (75 session + 15 unseen buffer). Any older '60 to 90' copy is retired.",
+  "user_flow_locked": "Comfort/sales page (email field + journal opt-in at the bottom) -> name -> photo upload + consent -> family photos -> Q1 -> Q2 -> choose time -> payment -> confirmation. Progress bar (x/y) on each step. Email captured BEFORE name for recovery.",
+  "photo_rules_LOCKED": "Photo step (client): up to 4 photos of the client, at least one forward-facing photo required (canon: reading needs one minimum), no hats/glasses. Family step: up to 6 family/relationship photos, each labeled from a fixed dropdown PLUS an 'Other' free-text option. Max 10 images total. All photos: EXIF/GPS stripped, HEIC->JPEG, type/size validated (<=25MB), R2 private. subject = 'self' | family label | free-text 'other'. Self vs relationship distinction preserved so only the consenting client's own reading is research-eligible.",
+  "cart_lifecycle_LOCKED": "120-minute window anchored at FIRST photo upload; does NOT reset on activity; visible calm countdown framed as a privacy promise. DO alarms: +30 nudge (T2), +90 nudge (T3), +120 destruction, +121 come-back (T4). Destruction at +120 deletes ALL photos from R2, nulls image columns, sets deleted_at, cancels the Cal.com booking (releases slot), status=EXPIRED. Photo deletion and slot release are coupled at +120. On payment success the DO cancels all pending alarms. Resume before 120 rehydrates; after 120 is a clean start (photos gone).",
+  "payment_vs_destruction_race_LOCKED": "When a payment attempt begins (step-7 submit) set payment_in_progress=true + timestamp. The +120 destruction alarm MUST check this flag and defer (re-arm ~10 min) while a charge is in-flight, so a slow user paying at +119 is never vaporized. Clear the flag on charge success/failure. Distinct from and additional to the webhook idempotency handling.",
+  "appointment_reminders": "DO alarms (not Cal.com Workflows): startTime-24h (T6) and startTime-1h (T7); each injects the Zoom URL from our DB.",
+  "consents_at_intake_LOCKED": {
+   "biometric_consent": "REQUIRED checkbox on the photo step to use the client's photo(s) for the reading. Logged in consent_log (type=biometric, granted, text_version, ip, ua, ts).",
+   "research_acknowledgment": "PLAIN TEXT on the photo step, NOT a checkbox, locked wording (research_consent_final_2026_07_12). It establishes understanding + default participation; the opt-out itself happens at delivery.",
+   "privacy_policy_ack": "REQUIRED checkbox 'I have read the privacy policy' with the policy one click away. GAP-FILLED beyond the spec's table: add privacy_policy_ack (bool) + timestamp + version, logged. No long policy text in the form; the link is the whole burden.",
+   "journal_opt_in": "Single OPTIONAL checkbox on the intro/email page; one tag 'journal'; no granular tags at launch."
+  },
+  "refund_reality_LOCKED": "Payment is taken at booking, days before the session, so every refund (pre-session cancellation OR in-session 10-minute opt-out) is a refund of a SETTLED Square payment: 2-7 business days for Square, 2-7 more for the bank, up to 4-14 business days total; a pending credit may show within 1-3 business days on Visa/Mastercard/Amex. NO void or same-day scenario. The old '1 to 3 business days / cancels the charge' safety-valve copy is retired. Cancellation copy is two visual blocks: PRE-SESSION (cancel any time, full refund, no fee, no questions) and IN-SESSION (first ten minutes are yours; stop and the charge is refunded on the same settled-payment timeline).",
+  "safety_valve_status_LOCKED": "PHASE 2. The in-session Zoom overlay / 10-minute pause widget is a separate build, out of scope for Phase 1. At launch the 10-minute opt-out is a MANUAL protocol (established verbally at session open, a defined signal, refund executed by hand in the Square dashboard). In Phase 1 the '10 minutes' appears only as refund POLICY copy.",
+  "email_split_LOCKED": "Contact form on the GoDaddy static site keeps the atma.blog PHP mail() pattern (config outside web root, 600 perms). ALL booking-flow transactional email is Resend on the Cloudflare app. T8 soft-interest note: for sessions that gave email/name but never uploaded a photo, one warm personal note from Atma after 24h (reply-to atma@atmangroup.org), no funnel styling; these pre-photo carts never enter the 120-min machinery.",
+  "spec_author_race_fixes_LOCKED": "zoom_url column nullable; T1 confirmation polls the Cal.com API for the booking if the webhook (0.5-4s lag) hasn't populated zoom_url by payment time. DO ids deterministic via idFromString(session_id). Square idempotency key = ${session_id}_${attempt_number} so a second card after a decline is not rejected as a duplicate of the original failure. Verify Cal.com webhook signatures; idempotent handlers; store UTC, display local."
+ },
+ "research_consent_final_2026_07_12": {
+  "status": "LOCKED. Supersedes the earlier opt-in-at-intake recommendation and any single-toggle reading of the model.",
+  "acknowledgment_LOCKED_WORDING": "I understand my de-identified, non-biometric data may be used as part of academic research, and that I can choose to opt out.",
+  "acknowledgment_form": "PLAIN TEXT displayed on the photo step. It is NOT a checkbox. The only checkbox on the photo step is the required biometric-photo consent. The acknowledgment establishes understanding and default participation; nothing is stored for it except the consent_text_version in effect when it was shown.",
+  "wording_rules": "Two words are load-bearing. 'de-identified' NEVER 'anonymized' (rich narrative can re-identify; over-promising anonymity is a trust + liability risk). 'academic' stays and is deliberate: it declares the data's intended destination (peer-reviewed venues, university collaboration, public scientific repositories) and methodology, and draws the line against commercial exploitation. Atma is the initial custodian of data intended for scholarly science.",
+  "opt_out_mechanism": "A one-click opt-out link delivered WITH the PDF report email after the session, which sets research_opt_out=TRUE. Default is FALSE (participating). Withdrawal remains available up to de-identification/incorporation, after which a single thread cannot be isolated. All states explained on the Privacy page.",
+  "eu_variation": "For EU-geo visitors (Cloudflare request.cf.country), the report-delivery choice is presented as an affirmative OPT-IN (default off) instead of an opt-out. Not selling to the EU regardless; this is incidental-visitor cover.",
+  "data_model": "Single research_opt_out (bool, default FALSE) set from the delivery-email link; consent_text_version tracks the acknowledgment wording shown. consent_log may carry a type=research row when the opt-out/opt-in choice is exercised at delivery.",
+  "hard_exclusions": "Biometric (photos) NEVER enters research. Third-party/relationship readings NEVER enter research. Chinese client data NEVER enters the archive. Archive never sold, never shared."
+ },
+ "retention_final_2026_07_12": {
+  "status": "LOCKED. Must match the Privacy page VERBATIM.",
+  "abandoned_cart_photos": "Deleted at the 120-min cart expiry, coupled with Cal.com slot release.",
+  "completed_booking_photos": "Deleted once the written report is delivered.",
+  "session_recording": "PERMANENTLY DELETED 72h after the session, scheduled as a per-booking DO alarm at session-end +72h. Uses Zoom's permanent-delete API (NOT the default delete, which drops the file into a 30-day recoverable trash). 'Destroyed' on the Privacy page is therefore literally true and irrecoverable.",
+  "written_report": "Retained so the client can re-request it; deleted on request.",
+  "research_eligibility": "Non-biometric reading record only, de-identified per consent; biometric never; Chinese never."
+ },
+ "decisions_resolved_2026_07_12": {
+  "note": "The four items previously flagged for Atma are now CLOSED and locked in the blocks above. Recorded here so they are not relitigated.",
+  "research_consent": "CLOSED. Acknowledgment (plain text, locked wording) at the photo step + one-click opt-out at report delivery; EU gets opt-in at delivery. See research_consent_final_2026_07_12.",
+  "eu_seam": "CLOSED. Edge geo-detect kept; for EU visitors the research choice is affirmative opt-in at delivery. Not selling to the EU.",
+  "destruction_vs_payment_race": "CLOSED. payment_in_progress flag defers the +120 destruction alarm while a charge is in-flight. See reconciled_build_architecture_2026_07_12.",
+  "recording_word": "CLOSED. 'Permanently deleted' via Zoom permanent-delete API; irrecoverable; Privacy page says 'destroyed' and means it.",
+  "photo_caps": "CLOSED. Up to 4 client photos (min 1) + up to 6 labeled family photos, max 10. Matches Build Spec section 5.",
+  "spec_author_fixes": "CLOSED. Nullable zoom_url + Cal.com poll fallback; deterministic DO ids; Square idempotency key = session_id + attempt."
+ },
+ "_index_version": "v13 (2026-07-13): FINAL for the booking/build + books-page chapter. Added books_page_2026_07_13 (four titles locked, Atma's headlines verbatim), headline_masterclass_round3_2026_07_13 (Claude failed twice; the extracted lesson), copywriting_protocol_LOCKED_2026_07_13 (Atma's Reverse-Engineer primer as standing law), mailchimp_collision_2026_07_13 (course waitlist has nowhere to land), course_project_handoff_2026_07_13 (everything known about the next project, including two critical doctrinal flags). Backend spec + chronology unchanged from v12.",
+ "biographical_chronology_LOCKED_2026_07_13": {
+  "status": "LOCKED 2026-07-13. Corrected from earlier drafts by Atma after verification. Overrides any earlier date, sequence, or age reference on any page or in any document.",
+  "sequence": {
+   "1999_most_of_year": "Atma is dating the woman whose face was later read.",
+   "1999_october": "Breakup.",
+   "1999_late_or_2000_january": "Conversation with the Kundalini master friend, who reads the ex-girlfriend's face. Roughly one month before Lincoln.",
+   "2000_february": "Atma meets Dr. Lincoln in person.",
+   "2000_end_of_year": "Apprenticeship formally begins.",
+   "2000_onward": "Whenever Lincoln comes to LA, he stays with Atma. Atma organizes all of Lincoln's LA face readings and intro workshops.",
+   "2002": "Atma performs his first face reading.",
+   "2005_october": "Atma teaches his first intro to face reading course.",
+   "2016": "Dr. Lincoln dies."
+  },
+  "public_numbers_rule": "Three distinct spans, three distinct provenances, do NOT conflate. Apprenticeship = end-2000 to 2016, publicly 'fifteen-year apprenticeship' (16 counted end-to-end, 'roughly fifteen' is the plain number). Practicing readings = since 2002. Teaching = since October 2005. Each label matches reality wherever it appears; recompute the practicing and teaching numbers against the current year each time they're used.",
+  "the_friend": "The Kundalini master friend was a close and early disciple of Yogi Bhajan. Like most early Bhajan disciples he took Sikh initiation AND became a Kundalini master in that lineage. Both identifications are true. Copy convention: use 'Kundalini master' wherever he is doing the face reading itself (that is the credential relevant to the act); use 'Sikh friend' or 'friend' where he is only the person in the room. The friend's name is not on the site by default; ask Atma before naming him anywhere.",
+  "age_is_a_scrub_item": "Atma's age, birth year, or any construction implying an age band (in his twenties, at 25, mid-thirties, etc.) is NEVER published in any book, biography, article, site copy, or ad. If a passage needs a time anchor, anchor to the year or the event, not to Atma's years on Earth. If existing copy carries an age or age-band reference, CUT it without substitution; do not rewrite the age, delete the reference.",
+  "book_one_intro_note": "The Foundations book's intro currently says 'Sikh friend' and 'high-profile partner.' Per the copy convention above, 'Sikh friend' is acceptable there because the friend is the person present, not the reader in that sentence's frame; leave it unless Atma marks it. 'High-profile partner' is Atma's own phrasing; leave it as authorial choice.",
+  "pages_to_audit_before_next_ship": "Home (origin-story paragraph must match this chronology and carry no age), Readings (any origin references), About (LA paragraph, apprenticeship number, any age-band language), The Science ('decades of clinical practice' for Lincoln is fine; do not attach a Lincoln-Atma span number here without checking), Books page v1 already draft-safe ('fifteen years' is correct for the apprenticeship credit)."
+ },
+ "books_page_2026_07_13": {
+  "status": "v3 delivered, awaiting Atma's markup. Not shipped.",
+  "history": "v1 FAILED completely (structure ignored the protocol; headlines were seller-brags about Atma and the method; Atma did not read past the headlines). v2 rebuilt to the five-stage protocol, structure accepted, but every headline was rewritten by Atma. v3 keeps Atma's headlines verbatim and rewrites all body copy to match their register.",
+  "titles_LOCKED": {
+   "book_one": "Intro to American Face Reading — 'Learn how to read faces'",
+   "book_two": "Family Scripts — 'The unconscious drivers behind stress and conflict'",
+   "book_three": "Service Personas — 'The parts you were born to play, and the roles waiting in the wings'",
+   "book_four": "Developmental Arrests — 'The invisible obstacles of early life, and how to overcome them'"
+  },
+  "headlines_LOCKED_atma_verbatim": [
+   "STAGE 1: Every face contains a person's life story. But you never learned to read it.",
+   "STAGE 2: Your intuition is illiterate.",
+   "STAGE 3: You have a chance to tap into a hidden science.",
+   "STAGE 4: Face reading is learnable. You can become a face reader.",
+   "STAGE 5: (Atma struck Claude's; Claude proposed 'Everyone you love is a book you never learned to read.' NOT yet approved.)"
+  ],
+  "book_three_framing_CLOSED": "Atma's own subtitle ('The parts you were born to play, and the roles waiting in the wings') holds the page at the persona/role register. The soul-type and lifetimes language stays inside the book covers. Doctrine flag closed; do not reopen.",
+  "open_items": [
+   "Stage 5 headline needs Atma's approval or replacement.",
+   "Page location: nav is locked at four items. Claude proposed footer-tier placement plus in-content links from Home and The Science. UNRESOLVED; anything else amends the settled architecture.",
+   "Buy vs notify CTA: Variant A (buy buttons per book) or Variant B (email capture, 'Tell me the moment they ship'). Depends on publication status of each book.",
+   "Book covers do not exist. Art TBD.",
+   "MAILCHIMP COLLISION (see mailchimp_collision_2026_07_13)."
+  ]
+ },
+ "headline_masterclass_round3_2026_07_13": {
+  "context": "Claude wrote the Books page headlines twice and failed both times. Atma rewrote all of them. This block records the extracted lesson. Read it BEFORE writing any headline, for any page, ever.",
+  "the_pairs": [
+   {
+    "claude": "Every face is telling the truth. You were just never taught to read it.",
+    "atma": "Every face contains a person's life story. But you never learned to read it.",
+    "lesson": "The only near-miss. Atma kept Claude's second half almost verbatim and replaced the abstraction. 'Telling the truth' is a virtue-abstraction; 'contains a person's life story' is a concrete object the reader wants to open. Concrete noun beats abstract virtue every time."
+   },
+   {
+    "claude": "You didn't misjudge them. You just couldn't read them yet.",
+    "atma": "Your intuition is illiterate.",
+    "lesson": "INDICT, DO NOT ABSOLVE. Claude's version reassures the reader and lets them off the hook, which kills the need for the cure. Atma's accuses them in three words and creates the lack. Comfort does not sell; deficit does. Also: 3 words vs 10."
+   },
+   {
+    "claude": "This is not intuition. It has a spine, and the spine is made of science.",
+    "atma": "You have a chance to tap into a hidden science.",
+    "lesson": "OFFER, DO NOT DEFEND. Claude argued against an objection nobody had raised yet, which concedes the frame and puts the brand on its back foot. Atma reframes the identical proof as a gift the reader gets to seize. Same facts, opposite posture."
+   },
+   {
+    "claude": "A reading is one method with four moves. So is this shelf.",
+    "atma": "Face reading is learnable. You can become a face reader.",
+    "atma_note": "Atma marked Claude's version 'This is incomprehensible.'",
+    "lesson": "STATE THE PROMISE, DO NOT ENCODE IT. If the headline requires decoding, it is dead on the page. Cleverness that needs a second pass is self-indulgence. Say the thing the reader wants to be true."
+   },
+   {
+    "claude": "Start with the book that just described someone you know.",
+    "atma": "(struck) 'TERRIBLE!!!!!!'",
+    "lesson": "Stage 5 is still a DESIRE beat, not a logistics beat. Claude wrote an instruction at the exact moment the reader needs to want something. 'Direct, not clever' does not mean 'flat.' The CTA headline must still carry the ache the page built."
+   }
+  ],
+  "extracted_rules": [
+   "Length: Atma's run 3 to 9 words. Claude's ran 10 to 14. Cut until it hurts.",
+   "Register: short, hard, clear. Not long, soft, clever.",
+   "Never write a headline about Atma, the lineage, or the method's cleverness. 'It took me fifteen years' and 'I didn't invent this, I inherited it' are seller-brags. The reader does not care yet.",
+   "The headlines must chain into ONE narrative of the reader's transformation. Read the headlines alone with all body removed: they should tell the whole story. Books page proves it: face contains your story -> you can't read it -> your instinct is illiterate -> a hidden science exists -> you can become a face reader.",
+   "Every headline is still a relational sentence about the reader's relationship to Atma or their own life (round 1 doctrine, unchanged), and still opens a loop the body closes.",
+   "The body must be written to serve the headline's register. A brutal headline over a gentle paragraph is a broken section. When Atma's headline indicts, the first body sentence must indict too ('You think you read people well. Everyone does.')."
+  ],
+  "claude_failure_mode_named": "Claude defaults to writing headlines that are balanced, kind, and pleased with themselves. That register is invisible. It also defaults to treating the protocol's stages as section labels to fill rather than internal states to produce. Both are the same disease: writing from inside Claude's head instead of the reader's."
+ },
+ "copywriting_protocol_LOCKED_2026_07_13": {
+  "source": "'Reverse-Engineer the Copy: A Primer on Copywriting as Emotional Engineering' by Atma Degeyndt. Atma's own document. This is the standing protocol for EVERY marketing page, ad, and email. Reread it at the start of any copy work; do not work from memory of it.",
+  "core_reframe": "Copy is not information transfer. It is emotional navigation. Stop asking 'what do I need to tell them' and ask 'what do I need them to feel, and in what order.'",
+  "macro_arc": "Interest -> Acceptance -> Cost-Benefit Recognition. These are the READER'S internal states, not page sections.",
+  "operational_beats": "Curiosity -> Recognition -> Interest -> Desire -> Need for Next Steps. You cannot generate desire in someone not yet curious. You cannot ask for action from someone who does not yet want anything.",
+  "guiding_heuristic": "Write the least amount necessary to carry them to the next state. Give them just enough to crave the next beat. No more.",
+  "the_five_stages_and_their_generative_grammar": {
+   "1_attention": "'You have interrupted my thought pattern and now I am interested in what you have to say.' Tool: the Big Promise, aimed at a desire the reader ALREADY has (not one you must teach them). Large enough to stop the scroll, credible enough not to trip the implausibility alarm. Modesty is invisible; nobody stops scrolling for reasonable. Add a secondary promise: smaller, easily believed, gives the skeptic a fallback reason to keep reading. Two hooks, one ambitious, one safe.",
+   "2_emotional_shift": "'I am having a strong emotional reaction to this. I am in feeling mode, not thinking mode.' Pick ONE emotion and go deep; do not hit all of them. Use the up-down pattern: pain, then payoff, then sharper pain, then more vivid possibility. Oscillation creates momentum. A flat tone, even a positive one, becomes wallpaper.",
+   "3_proof": "'I am allowing you to convince me because I want to be convinced. So please, be convincing.' The reader is NOT hostile; they want to believe. Proof is permission for a desire Stage 2 already created. Concrete, specific, verifiable, unfabricatable. 'Trusted by thousands' is weak; named specifics are strong.",
+   "4_mechanism": "'I understand how this works and I believe it will help me.' Two moves: story (reader projects themselves in, stops evaluating, starts imagining) and methodology (why it works, not what it does). Concreteness throughout.",
+   "5_action": "'I know exactly what I am supposed to do right now. You have made it clear and easy.' Specific, clear, frictionless. Remove ambiguity and risk. But per round-3 lesson: still a desire beat, not a logistics beat."
+  },
+  "diagnostic_use": "Read any section and ask whether the reader would plausibly be thinking that stage's grammar sentence. If not, the section is not doing its job. Rewrite until it does."
+ },
+ "mailchimp_collision_2026_07_13": {
+  "the_problem": "Three separate capture promises now exist across the site, and the locked email rule cannot hold all of them. LOCKED RULE (reconciled_build_architecture_2026_07_12): Mailchimp is journal-list-only, ONE tag ('journal'), no granular tags at launch, fires at intro of the booking flow. BUT: (1) The Science page's close carries a COURSE WAITLIST CTA. (2) The Books page pre-launch variant needs a book-notify capture. (3) Earlier canon contemplated three tags (reading-interest, course-interest, book-interest), which the launch rule retired.",
+  "why_it_matters_now": "The course project starts next. A course waitlist with nowhere to land is a broken promise on a live page.",
+  "claude_recommendation_unchanged": "Let the journal absorb all announcements under its single existing tag. Zero new machinery, honors the launch rule, and the journal is the natural umbrella for book and course news alike. Segment later when there is enough list to segment.",
+  "the_alternative": "Add a second tag ('course') at the moment the course has a real ship date. This is a small amendment to the locked rule, not a rebuild, but it must be a deliberate ruling, not a drift.",
+  "status": "UNRESOLVED. Needs Atma's ruling early in the course project."
+ },
+ "course_project_handoff_2026_07_13": {
+  "purpose": "The next project is designing, writing, and building the online American Face Reading course. Everything already known about it, gathered from across this index so the next chat does not start cold.",
+  "what_has_been_taught_before": "Intro: taught many times, in varying forms. Family Scripts: taught in full. Service Personas: taught in full. Developmental Arrests: NEVER taught, but PRE-PAID by two students. That outstanding obligation is a real debt and a natural forcing function.",
+  "what_exists": "Automatable intro course NOT yet built; components identified and layout designed; build intended with Claude Design. Hundreds of demonstration images already produced (training-deck and app content). Nine-section prompts form a complete guided-practice script, ready to become an interactive tool or lead magnet. Timed concentration practices are gamifiable.",
+  "architecture_already_settled": "The four-skill curriculum IS the book architecture: Skill 1-4 plus a concentration foundation. Zero redesign needed for an email course or a cohort program. Book One = the grammar/foundation, Book Two = family scripts, Book Three = service personas, Book Four = developmental arrests. Course and shelf are the same spine.",
+  "naming_asset": "'EmoTrace' is a coined, ownable sub-brand for the trainable skill, buried in the manuscript. Strong candidate for course or app branding. Unused so far.",
+  "audience_priority_for_a_course": "Rank 1 for paid training is therapists, counselors, coaches, and healing practitioners: the system's native vocabulary is theirs, Lincoln intended it for healers, highest willingness to pay for certification, and the ethics-forward framing lands. Entry points: CE-style workshops, practitioner certification. Rank 2 is personal-growth and spiritual seekers (Atma already owns distribution to a Taiwan teacher cohort). Rank 3 is leaders/managers/HR (corporate budgets, most secularized framing needed). ANTI-AUDIENCE, hard refusal: lawyers, interrogators, surveillance and security buyers. Contra Lincoln's wishes; the refusal is stated publicly as a trust signal.",
+  "TWO_CRITICAL_DOCTRINAL_FLAGS_THAT_WILL_DETONATE_IN_A_COURSE": {
+   "flag_1_persona_identification_contradiction": "Book 1 Ch 6 FORBIDS physiological identification of personas (energetic patterns only). Book 3 Ch 2 and Ch 4 repeatedly tie personas to physical features (Warrior = prominent jawline and intense eyes; Supporter = soft rounded face; Fountain of Love = soft empathetic eyes). Ch 7 reads family scripts from facial structure. A course must TEACH one doctrine; it cannot teach both. Standing recommendation: Book 1 Ch 6's energetic-pattern doctrine is more defensible and more distinctive; align the rest to it. This must be ruled on before curriculum is written, not during.",
+   "flag_2_the_physiognomy_line": "The trace-emotion skill DOES read structure produced by emotional history (furrows, set jaw), while the persona skill FORBIDS structure-reading. The distinction (acquired traces vs innate morphology) is coherent but has never been stated crisply anywhere. A course teaching people to do this needs ONE clean sentence drawing that line, or students will conflate the system with physiognomy and critics will do it louder."
+  },
+  "curriculum_timing_flag": "One passage prescribes 3 to 5 minutes per facial section; the prompts instruct 60 seconds per prompt. Reconcile before writing course instructions.",
+  "other_source_flags_relevant_to_teaching": "'55 variations of scripts' (Book 1 Ch 3) is unexplained; the provided taxonomies give 31 scripts, ~9 arrest codes plus AYM, and 31 personas. Source the 55 or delete it. PANG does double duty (parents' profile for KEG and alias for RFE). KAOH expansion inconsistent ('Old Homestead' vs 'House'). Any of these will surface the moment a student is handed a taxonomy.",
+  "ethics_doctrine_carries_into_the_course": "Conversion arcs matter: every arrest and script includes its healed form, which flips the taxonomy from deficit-labeling to redemption narrative. Ethically safer and commercially stronger. A course must teach the healed form alongside the diagnosis, or it becomes a labeling machine.",
+  "commercial_notes": "Free tier candidates: persona quiz, nine-sections guided practice tool, email course. Paid: cohort course of the four skills over N weeks. The Science page already promises a course waitlist (see mailchimp_collision_2026_07_13).",
+  "protocol_reminder": "The course sales page, when it comes, is written to copywriting_protocol_LOCKED_2026_07_13 and headline_masterclass_round3_2026_07_13. Reread both. Do not write from memory."
+ }
+}
