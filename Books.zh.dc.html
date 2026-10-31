@@ -38,16 +38,469 @@
     #__bundler_thumbnail svg { width: 100%; height: 100%; object-fit: contain; }
     #__bundler_placeholder { color: #999; font-size: 14px; }
   </style>
-  <noscript>
-    <style>#__bundler_loading { display: none; }</style>
-    <div style="position:fixed;bottom:12px;left:12px;font:13px/1.4 -apple-system,BlinkMacSystemFont,sans-serif;color:#999;background:rgba(255,255,255,0.9);padding:6px 12px;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,0.08);z-index:10000;">
-      This page requires JavaScript to display.
-    </div>
-  </noscript>
+  
 </head>
 <body>
   <div id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#38546E"></rect><circle cx="50" cy="50" r="21" fill="none" stroke="#F1ECDE" stroke-width="4"></circle><line x1="50" y1="29" x2="50" y2="71" stroke="#F1ECDE" stroke-width="4"></line><circle cx="40" cy="43" r="5" fill="#D98A4E"></circle></svg></div>
-  <div id="__bundler_loading">Unpacking...</div>
+  <div id="__prerender"><style>#__bundler_thumbnail,#__bundler_loading{display:none!important}body{display:block!important;min-height:0!important}</style><style>
+    .sc-placeholder{background:color-mix(in srgb,currentColor 8%,transparent);
+      border:1px solid color-mix(in srgb,currentColor 50%,transparent);
+      border-radius:2px;box-sizing:border-box;overflow:hidden}
+    @keyframes sc-shine{0%{background-position:100% 50%}100%{background-position:0% 50%}}
+    html.sc-dc-streaming .sc-placeholder,
+    html.sc-dc-streaming .sc-interp.sc-missing{position:relative;
+      background:color-mix(in srgb,currentColor 5%,transparent);
+      border-color:transparent}
+    html.sc-dc-streaming .sc-placeholder::before,
+    html.sc-dc-streaming .sc-interp.sc-missing::before{content:'';
+      position:absolute;inset:0;pointer-events:none;
+      background:linear-gradient(90deg,rgba(217,119,87,0) 25%,rgba(247,225,211,.95) 37%,rgba(217,119,87,0) 63%);
+      background-size:400% 100%;animation:sc-shine 1.4s ease infinite}
+    html.sc-dc-streaming .sc-placeholder:nth-child(n+9 of .sc-placeholder)::before,
+    html.sc-dc-streaming .sc-interp.sc-missing:nth-child(n+9 of .sc-interp.sc-missing)::before{animation:none;
+      background:color-mix(in srgb,currentColor 8%,transparent)}
+    .sc-placeholder-error{padding:4px 8px;font:11px/1.4 ui-monospace,monospace;
+      color:color-mix(in srgb,currentColor 70%,transparent);word-break:break-word}
+    .sc-interp.sc-missing{display:inline-block;width:2em;height:1em;overflow:hidden;
+      vertical-align:text-bottom;background:rgba(255,255,255,.3);border:1px solid rgba(0,0,0,.5);
+      border-radius:2px;box-sizing:border-box;color:transparent;
+      user-select:none}
+    .sc-interp.sc-unresolved{font-family:ui-monospace,monospace;font-size:.85em;
+      color:color-mix(in srgb,currentColor 50%,transparent);
+      background:color-mix(in srgb,currentColor 10%,transparent);border-radius:3px;
+      padding:0 3px}
+    .sc-host.sc-has-error{position:relative}
+    .sc-logic-error{position:absolute;top:8px;left:8px;z-index:2147483647;max-width:60ch;
+      padding:6px 10px;background:#b00020;color:#fff;font:12px/1.4 ui-monospace,monospace;
+      border-radius:4px;white-space:pre-wrap;pointer-events:none}
+    /* Mirrors PRINT_BASELINE_CSS in apps/web deck-stage-export.ts — keep both
+       in sync until dc-runtime regains a build step. */
+    @media print {
+      @page { margin: 0.5cm; }
+      figure, table { break-inside: avoid; }
+      #dc-root, #dc-root > .sc-host { height: auto; }
+      *, *::before, *::after {
+        print-color-adjust: exact; -webkit-print-color-adjust: exact;
+        backdrop-filter: none !important; -webkit-backdrop-filter: none !important;
+        animation-delay: -99s !important; animation-duration: .001s !important;
+        animation-iteration-count: 1 !important; animation-fill-mode: both !important;
+        animation-play-state: running !important; transition-duration: 0s !important;
+      }
+    }
+  </style>
+<style>x-dc{display:none!important}</style>
+<style id="__dc-atomics">.fx{display:flex}.col{display:flex;flex-direction:column}.grid{display:grid}.ac{align-items:center}.jc{justify-content:center}.jb{justify-content:space-between}.f1{flex:1}.noshrink{flex-shrink:0}.wrap{flex-wrap:wrap}.fw5{font-weight:500}.fw6{font-weight:600}.fw7{font-weight:700}.fw8{font-weight:800}.fs11{font-size:11px}.fs12{font-size:12px}.fs13{font-size:13px}.fs14{font-size:14px}.fs15{font-size:15px}.fs16{font-size:16px}.fs20{font-size:20px}.fs22{font-size:22px}.upper{text-transform:uppercase}.tc{text-align:center}.nowrap{white-space:nowrap}.gap8{gap:8px}.gap10{gap:10px}.gap12{gap:12px}.gap16{gap:16px}.gap24{gap:24px}.m0{margin:0}.mt8{margin-top:8px}.mt12{margin-top:12px}.mt16{margin-top:16px}.mb8{margin-bottom:8px}.mb12{margin-bottom:12px}.mb16{margin-bottom:16px}.posrel{position:relative}.posabs{position:absolute}.round{border-radius:50%}.ohide{overflow:hidden}.bbox{box-sizing:border-box}.pointer{cursor:pointer}.w100{width:100%}.b0{border:none}</style>
+<style>html,body{height:100%;margin:0}#dc-root,#dc-root>.sc-host{height:100%}</style>
+<style data-dc-tpl="4">
+  body{margin:0;background:#F6F2E9;color:#2B2A26;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  *{box-sizing:border-box}
+  a{color:#38546E;text-decoration:none}
+  a:hover{color:#B3453A}
+  ::selection{background:#B3453A26}
+  @keyframes ovIn{from{opacity:0}to{opacity:1}}
+  @keyframes drawerIn{from{transform:translateX(103%)}to{transform:translateX(0)}}
+  @keyframes sheetIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes popIn{0%{transform:scale(.6);opacity:0}60%{transform:scale(1.08)}100%{transform:scale(1);opacity:1}}
+  @media(max-width:768px){
+    header>div[style*="justify-content: space-between"]{flex-wrap:wrap;row-gap:12px}
+    header nav{flex-wrap:wrap;gap:12px 16px!important}
+    [style*="display: grid"]{grid-template-columns:1fr!important;gap:30px!important}
+    [style*="max-width: 1220px"],[style*="max-width: 940px"],[style*="max-width: 900px"]{padding-left:22px!important;padding-right:22px!important}
+    h1{font-size:clamp(28px,7.4vw,38px)!important;line-height:1.24!important}
+    h2[style*="font: 500 4"],h2[style*="font: 500 5"]{font-size:clamp(24px,6vw,32px)!important;line-height:1.3!important}
+    [data-mk="aside-drawer"]{width:100%!important}
+    [data-mk="hero-cover"]{max-width:300px!important;margin-left:auto!important;margin-right:auto!important}
+  }
+</style>
+
+
+<div id="dc-root"><div class="sc-host" data-sc-name=".bundle-src-Books.zh"><div data-dc-tpl="5" style="font-family: &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; overflow-x: hidden;">
+
+  
+  <header data-dc-tpl="6" data-screen-label="nav" style="position: sticky; top: 0px; z-index: 50; background: rgba(246, 242, 233, 0.933); backdrop-filter: saturate(1.1) blur(6px); border-bottom: 1px solid rgba(43, 42, 38, 0.094);">
+    <div data-dc-tpl="7" style="max-width: 1220px; margin: 0px auto; padding: 13px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
+      <a data-dc-tpl="8" href="Home.zh.dc.html" style="display: flex; align-items: center; gap: 11px; color: rgb(43, 42, 38);">
+        <span data-dc-tpl="9" style="width: 26px; height: 26px; flex: 0 0 auto; display: inline-block;">
+          <svg data-dc-tpl="10" width="26" height="26" viewBox="0 0 100 100" fill="none" stroke="#38546E" stroke-width="7" stroke-linecap="round" style="display: block;"><path data-dc-tpl="11" d="M50 20 A30 30 0 0 0 50 80 Z" fill="#38546E" fill-opacity="0.13" stroke="none"></path><circle data-dc-tpl="12" cx="50" cy="50" r="30"></circle><line data-dc-tpl="13" x1="50" y1="20" x2="50" y2="80"></line><circle data-dc-tpl="14" cx="36" cy="43" r="6.5" fill="#B3453A" stroke="none"></circle></svg>
+        </span>
+        <span data-dc-tpl="15" style="display: flex; flex-direction: column; line-height: 1;">
+          <span data-dc-tpl="16" style="font: 600 14px / 1 Georgia, serif; letter-spacing: 0.01em;">American Face Reading</span>
+          <span data-dc-tpl="17" style="font: 500 11px / 1.2 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.16em; color: rgb(56, 84, 110); margin-top: 5px;">美式面部解读</span>
+        </span>
+      </a>
+      <nav data-dc-tpl="18" style="display: flex; align-items: center; gap: 26px;">
+        <a data-dc-tpl="19" href="Readings.zh.dc.html" style="font: 600 13px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.12em; color: rgb(43, 42, 38);">解读服务</a>
+        <a data-dc-tpl="20" href="Science.zh.dc.html" style="font: 600 13px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.12em; color: rgb(43, 42, 38);">科学依据</a>
+        <a data-dc-tpl="21" href="About.zh.dc.html" style="font: 600 13px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.12em; color: rgb(43, 42, 38);">关于</a>
+        <a data-dc-tpl="22" href="Books.zh.dc.html" style="font: 600 13px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.12em; color: rgb(179, 69, 58);">图书</a>
+        <a data-dc-tpl="23" href="https://learn.americanfacereading.com/train" style="font: 600 13px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.12em; color: rgb(43, 42, 38);">学习</a>
+        <a data-dc-tpl="24" href="Intake.zh.dc.html" style="display: inline-flex; align-items: center; gap: 7px; background: rgb(56, 84, 110); color: rgb(246, 242, 233); font: 600 13px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.08em; padding: 11px 20px; border-radius: 24px;">预约解读 <span data-dc-tpl="25" style="font-size: 13px;">›</span></a>
+        
+          <button data-dc-tpl="27" type="button" style="position: relative; display: inline-flex; align-items: center; gap: 7px; background: none; border: 1px solid rgba(56, 84, 110, 0.333); border-radius: 20px; padding: 9px 14px; cursor: pointer; font: 600 12px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.06em; color: rgb(56, 84, 110);">
+            <svg data-dc-tpl="28" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#38546E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display: block;"><path data-dc-tpl="29" d="M4 5h2l1.2 12.2a1.5 1.5 0 0 0 1.5 1.3h8.2a1.5 1.5 0 0 0 1.5-1.2L20 8H7"></path><circle data-dc-tpl="30" cx="9.5" cy="21" r="0.6"></circle><circle data-dc-tpl="31" cx="18" cy="21" r="0.6"></circle></svg>
+            购物车
+            
+          </button>
+        
+        <a data-dc-tpl="34" data-lang-switch="" href="Books.dc.html" style="display: inline-flex; align-items: center; font: 600 12px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.06em; color: rgb(56, 84, 110); border: 1px solid rgba(56, 84, 110, 0.333); border-radius: 20px; padding: 8px 13px;">EN</a>
+      </nav>
+    </div>
+  </header>
+
+  
+  <div data-dc-tpl="35" style="background: rgb(241, 236, 222); border-bottom: 1px solid rgba(43, 42, 38, 0.094);">
+    <div data-dc-tpl="36" style="max-width: 1220px; margin: 0px auto; padding: 11px 40px; display: flex; align-items: center; gap: 13px; flex-wrap: wrap;">
+      <span data-dc-tpl="37" style="flex: 0 0 auto; font: 600 10px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.14em; color: rgb(56, 84, 110); border: 1px solid rgba(56, 84, 110, 0.333); border-radius: 4px; padding: 5px 8px;">EN</span>
+      <span data-dc-tpl="38" style="font: 400 14px / 1.6 &quot;Songti SC&quot;, STSong, SimSun, serif; color: rgb(60, 57, 47);">这四本书目前仅有英文版（PDF）。若你读英文，它们已经完备、可即时下载。下方介绍为中文，价格以美元计。</span>
+    </div>
+  </div>
+
+  
+  <section data-dc-tpl="39" data-screen-label="hero" style="position: relative; background: linear-gradient(rgba(56, 84, 110, 0.05) 1px, transparent 1px) 0% 0% / 32px 32px, linear-gradient(90deg, rgba(56, 84, 110, 0.05) 1px, transparent 1px) rgb(241, 236, 222); border-bottom: 1px solid rgba(43, 42, 38, 0.094);">
+    <div data-dc-tpl="40" style="max-width: 1220px; margin: 0px auto; padding: 60px 40px 72px; display: grid; grid-template-columns: 1.12fr 0.88fr; gap: 60px; align-items: center;">
+      <div data-dc-tpl="41">
+        <div data-dc-tpl="42" style="font: 600 11px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.24em; color: rgb(56, 84, 110); margin-bottom: 22px;">第一图 · 承诺 · 四本书</div>
+        <h1 data-dc-tpl="43" style="margin: 0px 0px 26px; font: 500 46px / 1.28 &quot;Songti SC&quot;, STSong, SimSun, Georgia, serif; letter-spacing: 0.01em; color: rgb(34, 31, 26); max-width: 16ch;">每张脸都写着一个人的人生故事。只是你从未学过怎么读。</h1>
+        <p data-dc-tpl="44" style="margin: 0px 0px 18px; font: 400 17px / 1.95 &quot;Songti SC&quot;, STSong, SimSun, serif; color: rgb(60, 57, 47); max-width: 40ch;">你遇见的每一个人，都把自己的全部历史写在脸上。塑造他们的家庭，他们在暗自管理的恐惧，他们从小就在扮演的性格，全都记录在五官里，明明白白地摆在那儿。</p>
+        <p data-dc-tpl="45" style="margin: 0px 0px 34px; font: 400 17px / 1.95 &quot;Songti SC&quot;, STSong, SimSun, serif; color: rgb(60, 57, 47); max-width: 40ch;">迈克尔·J·林肯博士用毕生证明：这一切可以被解读，一处一处地读出来。这四本书，教你怎么读。</p>
+        <div data-dc-tpl="46" style="display: flex; align-items: center; gap: 24px; flex-wrap: wrap;">
+          <a data-dc-tpl="47" href="#shelf" style="display: inline-flex; align-items: center; gap: 9px; font: 600 14px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.04em; color: rgb(56, 84, 110); border-bottom: 1.5px solid rgba(56, 84, 110, 0.267); padding-bottom: 5px;">看看这四本书 <span data-dc-tpl="48" style="font-size: 15px;">↓</span></a>
+          <div data-dc-tpl="49" style="font: 400 13px / 1.6 Georgia, serif; color: rgb(108, 104, 87);">第一册 · <span data-dc-tpl="50" style="color: rgb(179, 69, 58); font-weight: bold;">$19.95</span> · 从这里开始</div>
+        </div>
+      </div>
+
+      
+      <div data-dc-tpl="51" style="position: relative; display: flex; justify-content: center;">
+        <div data-dc-tpl="52" data-mk="hero-cover" style="position: relative; width: 100%; max-width: 334px;">
+          <div data-dc-tpl="53" style="position: absolute; top: 16px; right: -30px; width: 26px; height: calc(100% - 44px); background: rgb(46, 62, 73); border-radius: 2px 3px 3px 2px; box-shadow: rgba(31, 42, 49, 0.19) 0px 10px 24px;"></div>
+          <div data-dc-tpl="54" style="position: absolute; top: 26px; right: -18px; width: 26px; height: calc(100% - 64px); background: rgb(56, 84, 110); border-radius: 2px 3px 3px 2px;"></div>
+          <div data-dc-tpl="55" style="position: absolute; top: 36px; right: -6px; width: 26px; height: calc(100% - 84px); background: rgb(74, 96, 118); border-radius: 2px 3px 3px 2px;"></div>
+          <div data-dc-tpl="56" style="position: relative; aspect-ratio: 1 / 1.5; background: rgb(36, 48, 58); overflow: hidden; border-radius: 2px 4px 4px 2px; box-shadow: rgba(31, 42, 49, 0.333) 0px 20px 46px, rgba(255, 255, 255, 0.063) -1px 0px 0px inset;">
+            <img data-dc-tpl="57" src="assets/r/5e4ccd6fc415d899.jpg" alt="Intro to American Face Reading cover" style="position: absolute; inset: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center;">
+            <div data-dc-tpl="58" style="position: absolute; inset: 0px; background: linear-gradient(rgba(27, 36, 43, 0.95) 0%, rgba(31, 42, 49, 0.67) 16%, rgba(31, 42, 49, 0) 43%);"></div>
+            <div data-dc-tpl="59" style="position: absolute; inset: 11px; border: 1px solid rgba(231, 184, 175, 0.35); pointer-events: none;"></div>
+            <span data-dc-tpl="60" style="position: absolute; top: 18px; right: 18px; width: 14px; height: 14px;"><span data-dc-tpl="61" style="position: absolute; top: 6.5px; left: 0px; right: 0px; height: 1px; background: rgba(237, 231, 216, 0.667);"></span><span data-dc-tpl="62" style="position: absolute; left: 6.5px; top: 0px; bottom: 0px; width: 1px; background: rgba(237, 231, 216, 0.667);"></span></span>
+            <div data-dc-tpl="63" style="position: absolute; top: 26px; left: 26px; right: 26px;">
+              <div data-dc-tpl="64" style="font: 600 10px / 1 Georgia, serif; letter-spacing: 0.24em; color: rgb(231, 184, 175);">BOOK ONE</div>
+              <div data-dc-tpl="65" style="height: 1px; background: rgba(237, 231, 216, 0.3); margin: 11px 0px 12px;"></div>
+              <div data-dc-tpl="66" style="font: 400 27px / 1.08 Georgia, &quot;Songti SC&quot;, serif; letter-spacing: -0.01em; color: rgb(246, 241, 230); text-shadow: rgba(31, 42, 49, 0.6) 0px 1px 14px;">Intro to American Face&nbsp;Reading</div>
+            </div>
+            <div data-dc-tpl="67" style="position: absolute; bottom: 20px; left: 26px; right: 26px; display: flex; justify-content: space-between; align-items: center;">
+              <span data-dc-tpl="68" style="font: 600 9px / 1 Georgia, serif; letter-spacing: 0.2em; color: rgb(237, 231, 216); text-shadow: rgba(31, 42, 49, 0.8) 0px 1px 10px;">ATMA DEGEYNDT</span>
+              <span data-dc-tpl="69" style="font: 600 9px / 1 Georgia, serif; letter-spacing: 0.12em; color: rgb(216, 207, 192); text-shadow: rgba(31, 42, 49, 0.8) 0px 1px 10px;">THE PRIMER</span>
+            </div>
+          </div>
+          
+            <div data-dc-tpl="71" style="display: flex; align-items: center; gap: 8px; margin: 14px 4px 0px; font: 500 11px / 1.4 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; color: rgb(108, 104, 87);">
+              <span data-dc-tpl="72" style="height: 1px; flex: 1 1 0%; background: rgba(43, 42, 38, 0.15);"></span><span data-dc-tpl="73">每个人都从这一本开始</span><span data-dc-tpl="74" style="height: 1px; flex: 1 1 0%; background: rgba(43, 42, 38, 0.15);"></span>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section data-dc-tpl="75" data-screen-label="cost" style="background: linear-gradient(rgba(237, 231, 216, 0.04) 1px, transparent 1px) 0% 0% / 34px 34px, linear-gradient(90deg, rgba(237, 231, 216, 0.04) 1px, transparent 1px) rgb(31, 42, 49); color: rgb(237, 231, 216); position: relative;">
+    <div data-dc-tpl="76" style="max-width: 940px; margin: 0px auto; padding: 96px 40px;">
+      <div data-dc-tpl="77" style="font: 600 11px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.24em; color: rgb(134, 166, 191); margin-bottom: 22px;">第二图 · 它让你付出了什么</div>
+      <h2 data-dc-tpl="78" style="margin: 0px 0px 40px; font: 500 44px / 1.32 &quot;Songti SC&quot;, STSong, SimSun, serif; color: rgb(246, 241, 230); max-width: 16ch;">你的直觉，其实不识字。</h2>
+      <div data-dc-tpl="79" style="display: grid; grid-template-columns: 1fr 1fr; gap: 44px; margin-bottom: 14px;">
+        <div data-dc-tpl="80">
+          <p data-dc-tpl="81" style="margin: 0px 0px 18px; font: 400 16.5px / 2 &quot;Songti SC&quot;, STSong, serif; color: rgb(212, 206, 191);">你以为自己看人很准。每个人都这么以为。然后，想想那个你彻底看走眼的人。那个后来完全变成另一个人的伴侣。那个面试时光芒四射、却在开春前散了架的员工。那个你花了三十年想读懂的父亲或母亲。</p>
+          <p data-dc-tpl="82" style="margin: 0px; font: 400 16.5px / 2 &quot;Songti SC&quot;, STSong, serif; color: rgb(212, 206, 191);">事后你一遍遍复盘，寻找那个本该察觉的瞬间。最难受的是，那个瞬间其实无处不在，只是你读不出来。</p>
+        </div>
+        <div data-dc-tpl="83">
+          <p data-dc-tpl="84" style="margin: 0px 0px 18px; font: 400 16.5px / 2 &quot;Songti SC&quot;, STSong, serif; color: rgb(212, 206, 191);">关于一个人的真相，不是他选择递给你的东西。它会渗出来。它经年累月地定型在面部的肌肉里，像水渗进岩石；一旦刻下，就留在那里，等着一个读得懂的人。</p>
+          <p data-dc-tpl="85" style="margin: 0px; font: 400 16.5px / 2 &quot;Songti SC&quot;, STSong, serif; color: rgb(212, 206, 191);">因为你从未学过，你就一次次交着同样的学费。耗在错误关系里的五年。那位在得体微笑背后快要溺毙的朋友，而你只顾着聊天气。还有你凭空想象出来的那整个人，只因你看不见眼前真实的那一个。</p>
+        </div>
+      </div>
+      <div data-dc-tpl="86" style="border-top: 1px solid rgba(237, 231, 216, 0.12); margin-top: 44px; padding-top: 40px; max-width: 42ch;">
+        <p data-dc-tpl="87" style="margin: 0px 0px 18px; font: 400 16.5px / 2 &quot;Songti SC&quot;, STSong, serif; color: rgb(212, 206, 191);">现在，换一个版本。你遇见一个人，不到一分钟，就知道他背负着什么、为什么背负。不是猜测，是解读。</p>
+        <p data-dc-tpl="88" style="margin: 0px; font: 500 25px / 1.7 &quot;Songti SC&quot;, STSong, serif; color: rgb(246, 241, 230);">然后，你把同样清明的目光转向镜中自己的脸，终于叫得出那个操纵了你一生的模式的名字。</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section data-dc-tpl="89" data-screen-label="proof" style="max-width: 1220px; margin: 0px auto; padding: 92px 40px;">
+    <div data-dc-tpl="90" style="display: grid; grid-template-columns: 0.92fr 1.08fr; gap: 56px; align-items: start;">
+      <div data-dc-tpl="91">
+        <div data-dc-tpl="92" style="font: 600 11px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.24em; color: rgb(56, 84, 110); margin-bottom: 18px;">第三图 · 一门隐没的科学</div>
+        <h2 data-dc-tpl="93" style="margin: 0px 0px 20px; font: 500 38px / 1.32 &quot;Songti SC&quot;, STSong, SimSun, serif; color: rgb(34, 31, 26); max-width: 15ch;">你有机会，接通一门隐没的科学。</h2>
+        <p data-dc-tpl="94" style="margin: 0px; font: 400 16px / 1.95 &quot;Songti SC&quot;, STSong, serif; color: rgb(60, 57, 47); max-width: 38ch;">这门科学是真实的，只是大多数人从未听说。西尔文·汤姆金斯（Silvan Tomkins）梳理出人脸从出生起就在运行的九种情感：从兴趣，到羞耻，到闻见异味时那一下细微的退缩。保罗·艾克曼（Paul Ekman）与华莱士·弗里森（Wallace Friesen）建立起一套系统，为面部四十三块肌肉能做出的每一个动作命名。</p>
+        <div data-dc-tpl="95" style="font: 700 21px / 1.5 &quot;Kaiti SC&quot;, STKaiti, KaiTi, serif; color: rgb(56, 84, 110); margin-top: 22px; transform: rotate(-1deg); max-width: 26ch;">这块地基是稳的，无可争议。</div>
+      </div>
+      <div data-dc-tpl="96">
+        <p data-dc-tpl="97" style="margin: 0px 0px 16px; font: 400 16px / 1.95 &quot;Songti SC&quot;, STSong, serif; color: rgb(60, 57, 47);">林肯博士站在这块地基上，用数十年的临床实践，去测绘科学尚未触及的那一部分：这些定型的模式，究竟在诉说关于其主人的什么。他的著作至今仍在印行。而这套测绘本身，从未经过学术期刊的检验，这些书在页面上就坦白承认了这一点。因为唯一值得你信任的方法，是那种会明确告诉你「证据到哪里为止、假说从哪里开始」的方法。</p>
+        <p data-dc-tpl="98" style="margin: 0px 0px 26px; font: 400 16px / 1.95 &quot;Songti SC&quot;, STSong, serif; color: rgb(60, 57, 47);">Atma 师从林肯，直到他 2016 年离世，为他整理解读、一张脸一张脸地学会了这套系统，是唯一一位接过它、并在公开场合传授的学生。</p>
+
+        <div data-dc-tpl="99" style="border: 1px solid rgba(43, 42, 38, 0.133); background: rgb(252, 250, 243); border-radius: 6px; padding: 26px 28px 30px;">
+          <div data-dc-tpl="100" style="font: 600 10px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.2em; color: rgb(56, 84, 110); margin-bottom: 26px;">图 3 · 证据到此为止</div>
+          <div data-dc-tpl="101" style="position: relative; height: 64px;">
+            <div data-dc-tpl="102" style="position: absolute; left: 0px; width: 50%; top: 30px; height: 2px; background: rgb(56, 84, 110);"></div>
+            <div data-dc-tpl="103" style="position: absolute; right: 0px; width: 50%; top: 30px; height: 0px; border-top: 2px dashed rgb(179, 69, 58);"></div>
+            <div data-dc-tpl="104" style="position: absolute; left: 50%; top: 8px; bottom: 0px; width: 1.5px; background: rgb(179, 69, 58); transform: translateX(-50%);"></div>
+            <div data-dc-tpl="105" style="position: absolute; left: 0px; top: 0px; font: 600 9.5px / 1.5 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; color: rgb(56, 84, 110);">已成定论的科学<br data-dc-tpl="106"><span data-dc-tpl="107" style="color: rgb(138, 134, 118); font-weight: 400;">汤姆金斯 · 艾克曼 · 弗里森</span></div>
+            <div data-dc-tpl="108" style="position: absolute; right: 0px; top: 0px; text-align: right; font: 600 9.5px / 1.5 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; color: rgb(179, 69, 58);">林肯的测绘<br data-dc-tpl="109"><span data-dc-tpl="110" style="color: rgb(138, 134, 118); font-weight: 400;">经过检验，尚未发表</span></div>
+            <div data-dc-tpl="111" style="position: absolute; left: 50%; bottom: -16px; transform: translateX(-50%); font: 600 9px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.08em; color: rgb(179, 69, 58); white-space: nowrap;">↑ 这些书在页面上就这么写</div>
+          </div>
+          <div data-dc-tpl="112" style="display: flex; gap: 22px; flex-wrap: wrap; border-top: 1px solid rgba(43, 42, 38, 0.082); margin-top: 36px; padding-top: 18px; font: 500 11px / 1.6 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; color: rgb(108, 104, 87);">
+            <span data-dc-tpl="113"><span data-dc-tpl="114" style="color: rgb(56, 84, 110); font-weight: 600; font-family: Georgia, serif;">2002</span>&nbsp; 开始读脸</span>
+            <span data-dc-tpl="115"><span data-dc-tpl="116" style="color: rgb(56, 84, 110); font-weight: 600; font-family: Georgia, serif;">2005</span>&nbsp; 传授方法</span>
+            <span data-dc-tpl="117"><span data-dc-tpl="118" style="color: rgb(56, 84, 110); font-weight: 600; font-family: Georgia, serif;">2016</span>&nbsp; 随侍林肯至其离世</span>
+          </div>
+        </div>
+        <p data-dc-tpl="119" style="margin: 20px 0px 0px; font: 500 17px / 1.7 &quot;Songti SC&quot;, STSong, serif; color: rgb(56, 84, 110);">他当年站在那位发现者身边、亲身学到的东西，如今你可以从书页上学到。</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section data-dc-tpl="120" id="shelf" data-screen-label="method" style="background: rgb(241, 236, 222); border-top: 1px solid rgba(43, 42, 38, 0.094); border-bottom: 1px solid rgba(43, 42, 38, 0.094);">
+    <div data-dc-tpl="121" style="max-width: 1220px; margin: 0px auto; padding: 92px 40px;">
+
+      <div data-dc-tpl="122" style="max-width: 940px; margin: 0px auto 60px;">
+        <div data-dc-tpl="123" style="font: 600 11px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.24em; color: rgb(56, 84, 110); margin-bottom: 18px; text-align: center;">第四图 · 循序渐进的方法</div>
+        <h2 data-dc-tpl="124" style="margin: 0px auto 24px; font: 500 40px / 1.32 &quot;Songti SC&quot;, STSong, SimSun, serif; color: rgb(34, 31, 26); text-align: center; max-width: 20ch;">读脸是可以学会的。你也能成为一个读脸的人。</h2>
+        <p data-dc-tpl="125" style="margin: 0px auto 30px; font: 400 17px / 1.95 &quot;Songti SC&quot;, STSong, serif; color: rgb(60, 57, 47); max-width: 44ch; text-align: center;">这从来不是 Atma 与生俱来的天赋。它是四项技能，按顺序学会，每一项就是一本书。先看看其中最深的那一项是怎么运作的。</p>
+        <div data-dc-tpl="126" style="border-left: 2px solid rgb(179, 69, 58); padding: 6px 0px 6px 26px; max-width: 46ch; margin: 0px auto;">
+          <p data-dc-tpl="127" style="margin: 0px 0px 16px; font: 400 16.5px / 2 &quot;Songti SC&quot;, STSong, serif; color: rgb(60, 57, 47);">一个男人在他对面坐下。五十二岁，创办过两家公司，熬过一场离婚，养大三个孩子。他坐得太直，脊背从不碰椅背，问题还没问完，答案就已经送到。能干。风趣。有点让人发怵。然后 Atma 看向他的眼睛。他的眼睛，在等着某个人离开。</p>
+          <p data-dc-tpl="128" style="margin: 0px; font: 400 16.5px / 2 &quot;Songti SC&quot;, STSong, serif; color: rgb(60, 57, 47);">在这个令人生畏的男人体内某处，住着一个婴儿。在他还没有语言之前，就认定：没有人会来帮忙。于是他把整副身体，都围绕着一道命令组织起来——自己来。这道命令曾救过他一次。然后，它接管了他的一生。</p>
+        </div>
+        <p data-dc-tpl="129" style="margin: 30px auto 0px; font: 400 17px / 1.95 &quot;Songti SC&quot;, STSong, serif; color: rgb(60, 57, 47); max-width: 44ch; text-align: center;">读出一个人做过的最古老的决定，那个如今仍在悄悄替他做决定的决定，是第四项技能。它前面还有三项。学会全部四项，你就是一个读脸的人。这就是那一整排书，按你学习的顺序排好。</p>
+      </div>
+
+      
+      <div data-dc-tpl="130" style="background: rgb(252, 250, 243); border-width: 3px 1px 1px; border-style: solid; border-color: rgb(179, 69, 58) rgba(43, 42, 38, 0.133) rgba(43, 42, 38, 0.133); border-image: none; border-radius: 6px; padding: 34px; display: grid; grid-template-columns: 236px 1fr; gap: 44px; align-items: center; margin-bottom: 26px; box-shadow: rgba(43, 42, 34, 0.07) 0px 10px 30px;">
+        <div data-dc-tpl="131" style="position: relative; aspect-ratio: 1 / 1.5; background: rgb(36, 48, 58); overflow: hidden; border-radius: 2px 4px 4px 2px; box-shadow: rgba(31, 42, 49, 0.25) 0px 14px 32px; width: 100%; max-width: 250px; margin: 0px auto;">
+          <img data-dc-tpl="132" src="assets/r/5e4ccd6fc415d899.jpg" alt="Intro to American Face Reading cover" style="position: absolute; inset: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center;">
+          <div data-dc-tpl="133" style="position: absolute; inset: 0px; background: linear-gradient(rgba(27, 36, 43, 0.95) 0%, rgba(31, 42, 49, 0.67) 15%, rgba(31, 42, 49, 0) 40%);"></div>
+          <div data-dc-tpl="134" style="position: absolute; inset: 9px; border: 1px solid rgba(231, 184, 175, 0.35); pointer-events: none;"></div>
+          <span data-dc-tpl="135" style="position: absolute; top: 15px; right: 15px; width: 12px; height: 12px;"><span data-dc-tpl="136" style="position: absolute; top: 5.5px; left: 0px; right: 0px; height: 1px; background: rgba(237, 231, 216, 0.667);"></span><span data-dc-tpl="137" style="position: absolute; left: 5.5px; top: 0px; bottom: 0px; width: 1px; background: rgba(237, 231, 216, 0.667);"></span></span>
+          <div data-dc-tpl="138" style="position: absolute; top: 20px; left: 20px; right: 20px;">
+            <div data-dc-tpl="139" style="font: 600 8.5px / 1 Georgia, serif; letter-spacing: 0.22em; color: rgb(231, 184, 175);">BOOK ONE</div>
+            <div data-dc-tpl="140" style="height: 1px; background: rgba(237, 231, 216, 0.3); margin: 8px 0px 9px;"></div>
+            <div data-dc-tpl="141" style="font: 400 21px / 1.08 Georgia, &quot;Songti SC&quot;, serif; letter-spacing: -0.01em; color: rgb(246, 241, 230); text-shadow: rgba(31, 42, 49, 0.6) 0px 1px 12px;">Intro to American Face Reading</div>
+          </div>
+          <div data-dc-tpl="142" style="position: absolute; bottom: 15px; left: 20px; right: 20px; display: flex; justify-content: space-between;"><span data-dc-tpl="143" style="font: 600 8px / 1 Georgia, serif; letter-spacing: 0.18em; color: rgb(237, 231, 216); text-shadow: rgba(31, 42, 49, 0.8) 0px 1px 8px;">ATMA DEGEYNDT</span><span data-dc-tpl="144" style="font: 600 8px / 1 Georgia, serif; letter-spacing: 0.1em; color: rgb(216, 207, 192); text-shadow: rgba(31, 42, 49, 0.8) 0px 1px 8px;">PDF</span></div>
+        </div>
+        <div data-dc-tpl="145">
+          <div data-dc-tpl="146" style="display: inline-block; font: 600 10px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.12em; color: rgb(179, 69, 58); border: 1px solid rgba(179, 69, 58, 0.333); border-radius: 3px; padding: 5px 9px; margin-bottom: 16px;">从这里开始</div>
+          <h3 data-dc-tpl="147" style="margin: 0px 0px 4px; font: 500 30px / 1.2 &quot;Songti SC&quot;, STSong, SimSun, serif; color: rgb(34, 31, 26);">美式面部解读入门</h3>
+          <div data-dc-tpl="148" style="font: 600 12px / 1.4 Georgia, serif; letter-spacing: 0.02em; color: rgb(138, 134, 118); margin-bottom: 14px;">英文原版 · Intro to American Face Reading</div>
+          <div data-dc-tpl="149" style="font: 500 16px / 1.5 &quot;Songti SC&quot;, STSong, serif; color: rgb(56, 84, 110); margin-bottom: 16px;">学会读脸。</div>
+          <p data-dc-tpl="150" style="margin: 0px 0px 20px; font: 400 15.5px / 1.9 &quot;Songti SC&quot;, STSong, serif; color: rgb(60, 57, 47); max-width: 44ch;">解码这门语言的语法。看清我们的来处如何被刻成一份永久的记录。你会惊讶地发现，自己的过往在多大程度上遮住了别人的脸想告诉你的故事。想象一下，掀开那层帷幕、看见人们真正的模样，会是什么感觉。这一切，从这本书开始。</p>
+          <div data-dc-tpl="151" style="font: 500 11px / 1.6 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.04em; color: rgb(108, 104, 87); margin-bottom: 22px;">电子书 · PDF · 即时下载 · 任意设备阅读</div>
+          <div data-dc-tpl="152" style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+            <div data-dc-tpl="153" style="font: 700 30px / 1 Georgia, serif; color: rgb(179, 69, 58);">$19.95</div>
+            
+              <button data-dc-tpl="155" type="button" style="display: inline-flex; align-items: center; gap: 9px; background: rgb(179, 69, 58); color: rgb(246, 242, 233); border-width: medium; border-style: none; border-color: currentcolor; border-image: none; font: 700 14px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.04em; padding: 15px 26px; border-radius: 28px; cursor: pointer;">加入购物车 <span data-dc-tpl="156" style="font-size: 15px;">›</span></button>
+              <button data-dc-tpl="157" type="button" style="background: none; border-width: medium medium 1.5px; border-style: none none solid; border-color: currentcolor currentcolor rgba(56, 84, 110, 0.2); border-image: none; font: 600 13px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.04em; color: rgb(56, 84, 110); cursor: pointer; padding-bottom: 4px;">试读</button>
+              
+            
+            
+          </div>
+        </div>
+      </div>
+
+      <div data-dc-tpl="163" style="display: flex; align-items: center; gap: 16px; margin: 40px 0px 26px;">
+        <span data-dc-tpl="164" style="height: 1px; flex: 1 1 0%; background: rgba(43, 42, 38, 0.133);"></span>
+        <span data-dc-tpl="165" style="font: 600 11px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.2em; color: rgb(138, 134, 118);">然后，按顺序</span>
+        <span data-dc-tpl="166" style="height: 1px; flex: 1 1 0%; background: rgba(43, 42, 38, 0.133);"></span>
+      </div>
+
+      <div data-dc-tpl="167" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px;">
+
+        
+        <div data-dc-tpl="168" style="background: rgb(252, 250, 243); border: 1px solid rgba(43, 42, 38, 0.133); border-radius: 6px; padding: 20px; display: flex; flex-direction: column;">
+          <div data-dc-tpl="169" style="position: relative; aspect-ratio: 1 / 1.5; background: rgb(31, 42, 49); overflow: hidden; border-radius: 2px 4px 4px 2px; box-shadow: rgba(31, 42, 49, 0.22) 0px 12px 28px; margin-bottom: 20px;">
+            <img data-dc-tpl="170" src="assets/r/aaa1363d29a60bf9.jpg" alt="Family Scripts cover art" style="position: absolute; inset: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center; filter: saturate(0.98) contrast(1.02);">
+            <div data-dc-tpl="171" style="position: absolute; inset: 0px; background: linear-gradient(rgba(31, 42, 49, 0.91) 0%, rgba(31, 42, 49, 0.59) 17%, rgba(31, 42, 49, 0) 42%, rgba(31, 42, 49, 0.15) 100%);"></div>
+            
+            <div data-dc-tpl="172" style="position: absolute; inset: 9px; border: 1px solid rgba(237, 231, 216, 0.25); pointer-events: none;"></div>
+            <span data-dc-tpl="173" style="position: absolute; top: 15px; right: 15px; width: 12px; height: 12px;"><span data-dc-tpl="174" style="position: absolute; top: 5.5px; left: 0px; right: 0px; height: 1px; background: rgba(237, 231, 216, 0.4);"></span><span data-dc-tpl="175" style="position: absolute; left: 5.5px; top: 0px; bottom: 0px; width: 1px; background: rgba(237, 231, 216, 0.4);"></span></span>
+            <div data-dc-tpl="176" style="position: absolute; top: 20px; left: 20px; right: 20px;">
+              <div data-dc-tpl="177" style="font: 600 8.5px / 1 Georgia, serif; letter-spacing: 0.22em; color: rgb(231, 184, 175);">BOOK TWO</div>
+              <div data-dc-tpl="178" style="height: 1px; background: rgba(237, 231, 216, 0.2); margin: 8px 0px 9px;"></div>
+              <div data-dc-tpl="179" style="font: 400 22px / 1.08 Georgia, &quot;Songti SC&quot;, serif; letter-spacing: -0.01em; color: rgb(246, 241, 230);">Family Scripts</div>
+            </div>
+            <div data-dc-tpl="180" style="position: absolute; bottom: 15px; left: 20px; right: 20px; display: flex; justify-content: space-between;"><span data-dc-tpl="181" style="font: 600 8px / 1 Georgia, serif; letter-spacing: 0.18em; color: rgb(201, 194, 179);">ATMA DEGEYNDT</span><span data-dc-tpl="182" style="font: 600 8px / 1 Georgia, serif; letter-spacing: 0.1em; color: rgb(207, 199, 184);">PDF</span></div>
+          </div>
+          <h3 data-dc-tpl="183" style="margin: 0px 0px 2px; font: 500 20px / 1.3 &quot;Songti SC&quot;, STSong, serif; color: rgb(34, 31, 26);">家庭剧本</h3>
+          <div data-dc-tpl="184" style="font: 600 10.5px / 1.4 Georgia, serif; color: rgb(138, 134, 118); margin-bottom: 10px;">英文原版 · Family Scripts</div>
+          <div data-dc-tpl="185" style="font: 500 14px / 1.5 &quot;Songti SC&quot;, STSong, serif; color: rgb(56, 84, 110); margin-bottom: 10px;">压力与冲突背后，那些不自觉的驱动力。</div>
+          <p data-dc-tpl="186" style="margin: 0px 0px 18px; font: 400 14px / 1.85 &quot;Songti SC&quot;, STSong, serif; color: rgb(60, 57, 47); flex: 1 1 0%;">在你还不会说话之前，家庭就为你分派好了角色，而它慢慢定型在你的脸上。学会看见它，两件事会同时发生：你认出身边人正上演的剧本，也不再自动地扮演自己的那一出。</p>
+          <div data-dc-tpl="187" style="font: 500 9.5px / 1.6 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.04em; color: rgb(138, 134, 118); margin-bottom: 16px;">电子书 · PDF · 即时下载</div>
+          <div data-dc-tpl="188" style="display: flex; align-items: center; justify-content: space-between; gap: 10px; border-top: 1px solid rgba(43, 42, 38, 0.082); padding-top: 16px;">
+            <div data-dc-tpl="189" style="font: 700 23px / 1 Georgia, serif; color: rgb(179, 69, 58);">$49.99</div>
+            
+              <div data-dc-tpl="191" style="display: flex; align-items: center; gap: 12px;">
+                <button data-dc-tpl="192" type="button" style="background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; font: 600 12px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; color: rgb(56, 84, 110); cursor: pointer;">试读</button>
+                <button data-dc-tpl="193" type="button" style="background: rgb(179, 69, 58); color: rgb(246, 242, 233); border-width: medium; border-style: none; border-color: currentcolor; border-image: none; font: 700 13px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.04em; padding: 12px 18px; border-radius: 24px; cursor: pointer;">加入</button>
+              </div>
+            
+            
+          </div>
+          
+        </div>
+
+        
+        <div data-dc-tpl="198" style="background: rgb(252, 250, 243); border: 1px solid rgba(43, 42, 38, 0.133); border-radius: 6px; padding: 20px; display: flex; flex-direction: column;">
+          <div data-dc-tpl="199" style="position: relative; aspect-ratio: 1 / 1.5; background: rgb(31, 42, 49); overflow: hidden; border-radius: 2px 4px 4px 2px; box-shadow: rgba(31, 42, 49, 0.22) 0px 12px 28px; margin-bottom: 20px;">
+            <img data-dc-tpl="200" src="assets/r/3b156582779637f8.jpg" alt="Service Personas cover art" style="position: absolute; inset: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center; filter: saturate(0.98) contrast(1.02);">
+            <div data-dc-tpl="201" style="position: absolute; inset: 0px; background: linear-gradient(rgba(31, 42, 49, 0.91) 0%, rgba(31, 42, 49, 0.59) 17%, rgba(31, 42, 49, 0) 42%, rgba(31, 42, 49, 0.15) 100%);"></div>
+            
+            <div data-dc-tpl="202" style="position: absolute; inset: 9px; border: 1px solid rgba(237, 231, 216, 0.25); pointer-events: none;"></div>
+            <span data-dc-tpl="203" style="position: absolute; top: 15px; right: 15px; width: 12px; height: 12px;"><span data-dc-tpl="204" style="position: absolute; top: 5.5px; left: 0px; right: 0px; height: 1px; background: rgba(237, 231, 216, 0.4);"></span><span data-dc-tpl="205" style="position: absolute; left: 5.5px; top: 0px; bottom: 0px; width: 1px; background: rgba(237, 231, 216, 0.4);"></span></span>
+            <div data-dc-tpl="206" style="position: absolute; top: 20px; left: 20px; right: 20px;">
+              <div data-dc-tpl="207" style="font: 600 8.5px / 1 Georgia, serif; letter-spacing: 0.22em; color: rgb(231, 184, 175);">BOOK THREE</div>
+              <div data-dc-tpl="208" style="height: 1px; background: rgba(237, 231, 216, 0.2); margin: 8px 0px 9px;"></div>
+              <div data-dc-tpl="209" style="font: 400 22px / 1.08 Georgia, &quot;Songti SC&quot;, serif; letter-spacing: -0.01em; color: rgb(246, 241, 230);">Service Personas</div>
+            </div>
+            <div data-dc-tpl="210" style="position: absolute; bottom: 15px; left: 20px; right: 20px; display: flex; justify-content: space-between;"><span data-dc-tpl="211" style="font: 600 8px / 1 Georgia, serif; letter-spacing: 0.18em; color: rgb(201, 194, 179);">ATMA DEGEYNDT</span><span data-dc-tpl="212" style="font: 600 8px / 1 Georgia, serif; letter-spacing: 0.1em; color: rgb(207, 199, 184);">PDF</span></div>
+          </div>
+          <h3 data-dc-tpl="213" style="margin: 0px 0px 2px; font: 500 20px / 1.3 &quot;Songti SC&quot;, STSong, serif; color: rgb(34, 31, 26);">服务人格</h3>
+          <div data-dc-tpl="214" style="font: 600 10.5px / 1.4 Georgia, serif; color: rgb(138, 134, 118); margin-bottom: 10px;">英文原版 · Service Personas</div>
+          <div data-dc-tpl="215" style="font: 500 14px / 1.5 &quot;Songti SC&quot;, STSong, serif; color: rgb(56, 84, 110); margin-bottom: 10px;">你天生要扮演的角色，以及在幕后等待的那些。</div>
+          <p data-dc-tpl="216" style="margin: 0px 0px 18px; font: 400 14px / 1.85 &quot;Songti SC&quot;, STSong, serif; color: rgb(60, 57, 47); flex: 1 1 0%;">一个人用一生在扮演的那个角色。林肯记录了三十一种。一旦你认得它们写在脸上的签名，你一眼就能看出：自己面对的究竟是谁，以及他生来是为了做什么。</p>
+          <div data-dc-tpl="217" style="font: 500 9.5px / 1.6 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.04em; color: rgb(138, 134, 118); margin-bottom: 16px;">电子书 · PDF · 即时下载</div>
+          <div data-dc-tpl="218" style="display: flex; align-items: center; justify-content: space-between; gap: 10px; border-top: 1px solid rgba(43, 42, 38, 0.082); padding-top: 16px;">
+            <div data-dc-tpl="219" style="font: 700 23px / 1 Georgia, serif; color: rgb(179, 69, 58);">$49.99</div>
+            
+              <div data-dc-tpl="221" style="display: flex; align-items: center; gap: 12px;">
+                <button data-dc-tpl="222" type="button" style="background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; font: 600 12px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; color: rgb(56, 84, 110); cursor: pointer;">试读</button>
+                <button data-dc-tpl="223" type="button" style="background: rgb(179, 69, 58); color: rgb(246, 242, 233); border-width: medium; border-style: none; border-color: currentcolor; border-image: none; font: 700 13px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.04em; padding: 12px 18px; border-radius: 24px; cursor: pointer;">加入</button>
+              </div>
+            
+            
+          </div>
+          
+        </div>
+
+        
+        <div data-dc-tpl="228" style="background: rgb(252, 250, 243); border: 1px solid rgba(43, 42, 38, 0.133); border-radius: 6px; padding: 20px; display: flex; flex-direction: column;">
+          <div data-dc-tpl="229" style="position: relative; aspect-ratio: 1 / 1.5; background: rgb(31, 42, 49); overflow: hidden; border-radius: 2px 4px 4px 2px; box-shadow: rgba(31, 42, 49, 0.22) 0px 12px 28px; margin-bottom: 20px;">
+            <img data-dc-tpl="230" src="assets/r/6478a716688f8132.jpg" alt="Developmental Arrests cover art" style="position: absolute; inset: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center 22%; filter: saturate(0.98) contrast(1.02);">
+            <div data-dc-tpl="231" style="position: absolute; inset: 0px; background: linear-gradient(rgba(31, 42, 49, 0.91) 0%, rgba(31, 42, 49, 0.59) 16%, rgba(31, 42, 49, 0) 42%, rgba(31, 42, 49, 0.15) 100%);"></div>
+            <div data-dc-tpl="232" style="position: absolute; inset: 9px; border: 1px solid rgba(237, 231, 216, 0.25); pointer-events: none;"></div>
+            <span data-dc-tpl="233" style="position: absolute; top: 15px; right: 15px; width: 12px; height: 12px;"><span data-dc-tpl="234" style="position: absolute; top: 5.5px; left: 0px; right: 0px; height: 1px; background: rgba(237, 231, 216, 0.4);"></span><span data-dc-tpl="235" style="position: absolute; left: 5.5px; top: 0px; bottom: 0px; width: 1px; background: rgba(237, 231, 216, 0.4);"></span></span>
+            <div data-dc-tpl="236" style="position: absolute; top: 20px; left: 20px; right: 20px;">
+              <div data-dc-tpl="237" style="font: 600 8.5px / 1 Georgia, serif; letter-spacing: 0.22em; color: rgb(231, 184, 175);">BOOK FOUR</div>
+              <div data-dc-tpl="238" style="height: 1px; background: rgba(237, 231, 216, 0.2); margin: 8px 0px 9px;"></div>
+              <div data-dc-tpl="239" style="font: 400 22px / 1.08 Georgia, &quot;Songti SC&quot;, serif; letter-spacing: -0.01em; color: rgb(246, 241, 230);">Developmental Arrests</div>
+            </div>
+            <div data-dc-tpl="240" style="position: absolute; bottom: 15px; left: 20px; right: 20px; display: flex; justify-content: space-between;"><span data-dc-tpl="241" style="font: 600 8px / 1 Georgia, serif; letter-spacing: 0.18em; color: rgb(201, 194, 179);">ATMA DEGEYNDT</span><span data-dc-tpl="242" style="font: 600 8px / 1 Georgia, serif; letter-spacing: 0.1em; color: rgb(207, 199, 184);">PDF</span></div>
+          </div>
+          <h3 data-dc-tpl="243" style="margin: 0px 0px 2px; font: 500 20px / 1.3 &quot;Songti SC&quot;, STSong, serif; color: rgb(34, 31, 26);">发展停滞</h3>
+          <div data-dc-tpl="244" style="font: 600 10.5px / 1.4 Georgia, serif; color: rgb(138, 134, 118); margin-bottom: 10px;">英文原版 · Developmental Arrests</div>
+          <div data-dc-tpl="245" style="font: 500 14px / 1.5 &quot;Songti SC&quot;, STSong, serif; color: rgb(56, 84, 110); margin-bottom: 10px;">早年生命里那些看不见的障碍，以及如何跨越它们。</div>
+          <p data-dc-tpl="246" style="margin: 0px 0px 18px; font: 400 14px / 1.85 &quot;Songti SC&quot;, STSong, serif; color: rgb(60, 57, 47); flex: 1 1 0%;">就是你刚刚见到的那个男人，以及所有像他一样的人。那个最古老的决定，至今仍在幕后操盘，在你所爱的人身上，也在你自己身上。这是四本里最深的一本，多数读者还没读完第一章，就已经在里面看见了自己。</p>
+          <div data-dc-tpl="247" style="font: 500 9.5px / 1.6 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.04em; color: rgb(138, 134, 118); margin-bottom: 16px;">电子书 · PDF · 即时下载</div>
+          <div data-dc-tpl="248" style="display: flex; align-items: center; justify-content: space-between; gap: 10px; border-top: 1px solid rgba(43, 42, 38, 0.082); padding-top: 16px;">
+            <div data-dc-tpl="249" style="font: 700 23px / 1 Georgia, serif; color: rgb(179, 69, 58);">$49.99</div>
+            
+              <div data-dc-tpl="251" style="display: flex; align-items: center; gap: 12px;">
+                <button data-dc-tpl="252" type="button" style="background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; font: 600 12px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; color: rgb(56, 84, 110); cursor: pointer;">试读</button>
+                <button data-dc-tpl="253" type="button" style="background: rgb(179, 69, 58); color: rgb(246, 242, 233); border-width: medium; border-style: none; border-color: currentcolor; border-image: none; font: 700 13px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.04em; padding: 12px 18px; border-radius: 24px; cursor: pointer;">加入</button>
+              </div>
+            
+            
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <section data-dc-tpl="258" data-screen-label="close" style="max-width: 1220px; margin: 0px auto; padding: 92px 40px;">
+    <div data-dc-tpl="259" style="max-width: 940px; margin: 0px auto 48px; text-align: center;">
+      <div data-dc-tpl="260" style="font: 600 11px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.24em; color: rgb(56, 84, 110); margin-bottom: 22px;">第五图 · 完整的方法</div>
+      <h2 data-dc-tpl="261" style="margin: 0px auto 24px; font: 500 42px / 1.32 &quot;Songti SC&quot;, STSong, SimSun, serif; color: rgb(34, 31, 26); max-width: 22ch;">你所爱的每一个人，都是一本你从未学会去读的书。</h2>
+      <p data-dc-tpl="262" style="margin: 0px auto; font: 400 17px / 1.95 &quot;Songti SC&quot;, STSong, serif; color: rgb(60, 57, 47); max-width: 44ch;">而这，到此为止。这四本书，每一本都能独立成立，所以就从读到这里时最触动你的那一本开始。把四本按顺序读完，你就握住了完整的方法，Atma 当年一张脸一张脸从林肯那里学来的那套方法。它不再对你隐藏任何东西。故事，一直都写在他们的脸上。</p>
+    </div>
+
+    
+    <div data-dc-tpl="263" style="max-width: 900px; margin: 0px auto; background: linear-gradient(rgba(237, 231, 216, 0.027) 1px, transparent 1px) 0% 0% / 30px 30px, linear-gradient(90deg, rgba(237, 231, 216, 0.027) 1px, transparent 1px) rgb(31, 42, 49); color: rgb(237, 231, 216); border-radius: 8px; padding: 44px; display: grid; grid-template-columns: 1fr 0.82fr; gap: 44px; align-items: center; position: relative; overflow: hidden;">
+      <div data-dc-tpl="264">
+        <div data-dc-tpl="265" style="font: 600 10px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.24em; color: rgb(134, 166, 191); margin-bottom: 16px;">完整方法 · 全四册</div>
+        <h3 data-dc-tpl="266" style="margin: 0px 0px 18px; font: 500 30px / 1.32 &quot;Songti SC&quot;, STSong, serif; color: rgb(246, 241, 230); max-width: 16ch;">整排书，按你学习的顺序。</h3>
+        <div data-dc-tpl="267" style="display: flex; flex-direction: column; gap: 9px; margin-bottom: 8px;">
+          <div data-dc-tpl="268" style="display: flex; align-items: baseline; gap: 10px; font: 400 14.5px / 1.5 &quot;Songti SC&quot;, STSong, serif; color: rgb(212, 206, 191);"><span data-dc-tpl="269" style="font: 600 9px / 1 Georgia, serif; color: rgb(134, 166, 191); width: 18px;">I</span> 美式面部解读入门</div>
+          <div data-dc-tpl="270" style="display: flex; align-items: baseline; gap: 10px; font: 400 14.5px / 1.5 &quot;Songti SC&quot;, STSong, serif; color: rgb(212, 206, 191);"><span data-dc-tpl="271" style="font: 600 9px / 1 Georgia, serif; color: rgb(134, 166, 191); width: 18px;">II</span> 家庭剧本</div>
+          <div data-dc-tpl="272" style="display: flex; align-items: baseline; gap: 10px; font: 400 14.5px / 1.5 &quot;Songti SC&quot;, STSong, serif; color: rgb(212, 206, 191);"><span data-dc-tpl="273" style="font: 600 9px / 1 Georgia, serif; color: rgb(134, 166, 191); width: 18px;">III</span> 服务人格</div>
+          <div data-dc-tpl="274" style="display: flex; align-items: baseline; gap: 10px; font: 400 14.5px / 1.5 &quot;Songti SC&quot;, STSong, serif; color: rgb(212, 206, 191);"><span data-dc-tpl="275" style="font: 600 9px / 1 Georgia, serif; color: rgb(134, 166, 191); width: 18px;">IV</span> 发展停滞</div>
+        </div>
+      </div>
+      <div data-dc-tpl="276" style="text-align: center; border-left: 1px solid rgba(237, 231, 216, 0.12); padding-left: 44px;">
+        <div data-dc-tpl="277" style="font: 500 13px / 1 Georgia, serif; color: rgb(159, 169, 174); text-decoration: line-through; margin-bottom: 8px;">$169.92</div>
+        <div data-dc-tpl="278" style="font: 700 54px / 1 Georgia, serif; color: rgb(246, 241, 230); margin-bottom: 6px;">$149.00</div>
+        <div data-dc-tpl="279" style="font: 600 11px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.1em; color: rgb(231, 184, 175); margin-bottom: 24px;">立省 $20.92</div>
+        
+          <button data-dc-tpl="281" type="button" style="width: 100%; display: inline-flex; align-items: center; justify-content: center; gap: 9px; background: rgb(179, 69, 58); color: rgb(246, 242, 233); border-width: medium; border-style: none; border-color: currentcolor; border-image: none; font: 700 15px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.04em; padding: 17px 24px; border-radius: 30px; cursor: pointer;">四本一起入手 <span data-dc-tpl="282" style="font-size: 16px;">›</span></button>
+          <div data-dc-tpl="283" style="margin-top: 14px; font: 400 13px / 1.6 &quot;Songti SC&quot;, STSong, serif; color: rgb(159, 169, 174);">或者，先从入门读起，$19.95。</div>
+          
+        
+        
+      </div>
+    </div>
+
+    
+      <div data-dc-tpl="294" style="text-align: center; font: 700 22px / 1.5 &quot;Kaiti SC&quot;, STKaiti, KaiTi, serif; color: rgb(56, 84, 110); margin-top: 36px; transform: rotate(-0.8deg);">你就是在这里，学会那套字母表的。</div>
+    
+  </section>
+
+  
+  <footer data-dc-tpl="295" style="background: rgb(31, 42, 49); color: rgb(201, 194, 179);">
+    <div data-dc-tpl="296" style="max-width: 1220px; margin: 0px auto; padding: 52px 40px 44px; display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px;">
+      <div data-dc-tpl="297">
+        <div data-dc-tpl="298" style="display: flex; align-items: center; gap: 11px; margin-bottom: 14px;">
+          <span data-dc-tpl="299" style="width: 24px; height: 24px; display: inline-block;"><svg data-dc-tpl="300" width="24" height="24" viewBox="0 0 100 100" fill="none" stroke="#EDE7D8" stroke-width="7" stroke-linecap="round" style="display: block;"><path data-dc-tpl="301" d="M50 20 A30 30 0 0 0 50 80 Z" fill="#EDE7D8" fill-opacity="0.14" stroke="none"></path><circle data-dc-tpl="302" cx="50" cy="50" r="30"></circle><line data-dc-tpl="303" x1="50" y1="20" x2="50" y2="80"></line><circle data-dc-tpl="304" cx="36" cy="43" r="6.5" fill="#D2564A" stroke="none"></circle></svg></span>
+          <span data-dc-tpl="305" style="font: 600 14px / 1 Georgia, serif; color: rgb(246, 241, 230);">American Face Reading</span>
+        </div>
+        <p data-dc-tpl="306" style="margin: 0px; font: 400 15px / 1.8 &quot;Songti SC&quot;, STSong, serif; color: rgb(159, 169, 174); max-width: 34ch;">「在你把无意识变为意识之前，它将主导你的人生，而你会称之为命运。」<span data-dc-tpl="307" style="display: block; font: 500 10px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.12em; color: rgb(126, 140, 147); margin-top: 10px;">— 卡尔 · 荣格</span></p>
+      </div>
+      <div data-dc-tpl="308">
+        <div data-dc-tpl="309" style="font: 600 10px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.2em; color: rgb(126, 140, 147); margin-bottom: 16px;">页面</div>
+        <div data-dc-tpl="310" style="display: flex; flex-direction: column; gap: 10px; font: 500 13px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif;">
+          <a data-dc-tpl="311" href="Readings.zh.dc.html" style="color: rgb(201, 194, 179);">解读服务</a>
+          <a data-dc-tpl="312" href="Science.zh.dc.html" style="color: rgb(201, 194, 179);">科学依据</a>
+          <a data-dc-tpl="313" href="Books.zh.dc.html" style="color: rgb(201, 194, 179);">图书</a>
+          <a data-dc-tpl="314" href="About.zh.dc.html" style="color: rgb(201, 194, 179);">关于 Atma</a>
+          <a data-dc-tpl="315" href="Privacy.zh.dc.html" style="color: rgb(201, 194, 179);">隐私与数据保护</a>
+        </div>
+      </div>
+      <div data-dc-tpl="316">
+        <div data-dc-tpl="317" style="font: 600 10px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.2em; color: rgb(126, 140, 147); margin-bottom: 16px;">开始</div>
+        <a data-dc-tpl="318" href="Intake.zh.dc.html" style="display: inline-flex; align-items: center; gap: 8px; background: rgb(179, 69, 58); color: rgb(246, 242, 233); font: 600 13px / 1 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; letter-spacing: 0.06em; padding: 13px 20px; border-radius: 24px;">预约解读 <span data-dc-tpl="319" style="font-size: 14px;">›</span></a>
+      </div>
+    </div>
+    <div data-dc-tpl="320" style="border-top: 1px solid rgba(237, 231, 216, 0.082);">
+      <div data-dc-tpl="321" style="max-width: 1220px; margin: 0px auto; padding: 16px 40px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; font: 400 11px / 1.6 &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif; color: rgb(126, 140, 147);">
+        <span data-dc-tpl="322">© 2026 American Face Reading · 美式面部解读</span>
+        <span data-dc-tpl="323">电子书以 PDF 交付，目前仅有英文版。已成定论的科学，与林肯博士经检验、尚未发表的测绘，始终分明标注。</span>
+      </div>
+    </div>
+  </footer>
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  </div></div></div>
+
+
+
+</div>
+<div id="__bundler_loading">Unpacking...</div>
 
   <script>
     
